@@ -18,7 +18,7 @@ const sintony = Sintony({
 });
 
 export const metadata: Metadata = {
-  title: 'Giovanni Vicentin',
+  title: "Giovanni Vicentin's Portfolio",
   description: 'Giovanni Vicentin personal website',
 };
 

@@ -1,8 +1,54 @@
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
+import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
+
 export default function Home() {
   return (
     <>
-      <div>
-        <h1>Hello World!</h1>
+      <div className="flex flex-col justify-center items-start mt-20">
+        <div className="flex flex-col-reverse sm:flex-row items-start">
+          <div className="flex flex-col">
+            <h1 className="text-3xl mt-1.5">
+              Welcome to my portfolio website!
+            </h1>
+            <h2 className="text-2xl mt-1.5">
+              I'm happy you've visited. I'm{' '}
+              <span className="dark:text-violet-400 text-violet-700 border-b border-muted">
+                Giovanni Vicentin
+              </span>
+              .
+            </h2>
+            <p className="text-lg text-muted-foreground mt-5">
+              Outside of coding, I'm a dedicated karate enthusiast. Music fuels
+              my <br /> soul, especially Brazilian rap. I frequently immerse
+              myself in books, <br />
+              finding wisdom and inspiration in their pages.
+            </p>
+            <div className="flex mt-5">
+              <Button className="text-md">
+                <Link href="/about">Learn more about me</Link>
+              </Button>
+              <Button className="text-md ml-1.5">
+                <Link href="/">Download CV</Link>
+              </Button>
+            </div>
+            <p className="mt-5 text-muted-foreground text-lg">Find me on:</p>
+            <div className="flex mt-5">
+                <Link href="https://www.linkedin.com/in/giovannivicentin/"> <LinkedInLogoIcon className='w-7 h-7'/></Link>
+             
+                <Link href="https://github.com/giovannivicentin"> <GitHubLogoIcon className="w-7 h-7 ml-4" /></Link>
+            </div>
+          </div>
+
+          <Image
+            src="/ai-profile.png"
+            width={150}
+            height={150}
+            alt="AI Profile Image"
+            className="rounded-full"
+          ></Image>
+        </div>
       </div>
     </>
   );
