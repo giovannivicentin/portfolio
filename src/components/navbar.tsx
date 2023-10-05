@@ -13,8 +13,8 @@ function Navbar() {
       </Button>
       <Separator orientation="vertical" className="h-6 mx-2" />
       <Button className="text-md w-28" variant="ghost">
-        <Link href="/about" className="px-10">
-          About
+        <Link href="/journey" className="px-10">
+          Journey
         </Link>
       </Button>
       <Separator orientation="vertical" className="h-6 mx-2" />
