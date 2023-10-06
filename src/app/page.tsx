@@ -2,26 +2,23 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
-import { Separator } from '@/components/ui/separator';
 import TechStack from '@/components/tech-stack';
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col justify-center items-start mt-20">
+      <div className="flex flex-col justify-center items-center mt-20">
         <div className="flex flex-col-reverse sm:flex-row items-start">
           <div className="flex flex-col">
-            <h1 className="text-3xl mt-1.5">
-              Welcome to my portfolio website!
-            </h1>
-            <h2 className="text-2xl mt-1.5">
+            <h1 className="text-3xl">Welcome to my portfolio website!</h1>
+            <h2 className="text-2xl mt-2">
               I'm happy you've visited. I'm{' '}
               <span className="dark:text-violet-400 text-violet-700 border-b border-muted">
                 Giovanni Vicentin
               </span>
               .
             </h2>
-            <p className="text-lg text-muted-foreground mt-5">
+            <p className="text-lg text-muted-foreground mt-3 leading-relaxed">
               Outside of coding, I'm a dedicated karate enthusiast. Music fuels
               my <br /> soul, especially Brazilian rap. I frequently immerse
               myself in books, <br />
