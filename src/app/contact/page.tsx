@@ -8,7 +8,9 @@ const ContactPage = () => {
         <h1 className="text-3xl mb-6 text-center">Contact</h1>
         <div className="flex flex-col items-center space-y-2">
           <div className="flex flex-col items-start w-full max-w-md">
-            <Label htmlFor="email">E-mail</Label>
+            <Label className="mb-1" htmlFor="email">
+              E-mail
+            </Label>
             <Input
               id="email"
               type="email"
@@ -16,7 +18,9 @@ const ContactPage = () => {
             />
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
-            <Label htmlFor="subject">Subject</Label>
+            <Label className="mb-1" htmlFor="subject">
+              Subject
+            </Label>
             <Input
               id="subject"
               type="text"
@@ -24,11 +28,14 @@ const ContactPage = () => {
             />
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
-            <Label htmlFor="message">Message</Label>
+            <Label className="mb-1" htmlFor="message">
+              Message
+            </Label>
             <Input
+              placeholder="Write your message here"
+              className="pt-4 pb-20"
               id="message"
               type="text"
-              placeholder="Write your message here"
             />
           </div>
         </div>

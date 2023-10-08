@@ -53,7 +53,7 @@ const JourneyPage = () => {
           rewarding as backend. It's a journey I genuinely relish.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          I'm currently working as a Full Stack Developer, utilizing all these
+          I'm currently working as a Full Stack Developer, with all those
           technologies, depending on the project.
         </p>
       </div>
