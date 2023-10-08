@@ -5,38 +5,42 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className="w-full px-4 py-1 flex items-center justify-center border-b border-muted-foreground/40 md:px-6 lg:px-10">
-      <Button
-        asChild
-        className="text-sm md:text-md w-24 md:w-28"
-        variant="ghost"
-      >
-        <Link href="/" className="px-4 md:px-10">
+    <nav className="w-full max-w-4xl flex items-center justify-center border-b border-muted-foreground/40 p-1">
+      <Link href="/">
+        <Button variant="ghost" className="text-sm md:text-md w-24 md:w-28">
           Home
-        </Link>
-      </Button>
+        </Button>
+      </Link>
+
       <Separator orientation="vertical" className="h-4 md:h-6 mx-1 md:mx-2" />
-      <Button className="text-sm md:text-md w-24 md:w-28" variant="ghost">
-        <Link href="/journey" className="px-4 md:px-10">
+
+      <Link href="/journey">
+        <Button variant="ghost" className="text-sm md:text-md w-24 md:w-28">
           Journey
-        </Link>
-      </Button>
+        </Button>
+      </Link>
+
       <Separator orientation="vertical" className="h-4 md:h-6 mx-1 md:mx-2" />
-      <Button className="text-sm md:text-md w-24 md:w-28" variant="ghost">
-        <Link href="/projects" className="px-4 md:px-10">
+
+      <Link href="/projects">
+        <Button variant="ghost" className="text-sm md:text-md w-24 md:w-28">
           Projects
-        </Link>
-      </Button>
+        </Button>
+      </Link>
+
       <Separator orientation="vertical" className="h-4 md:h-6 mx-1 md:mx-2" />
-      <Button className="text-sm md:text-md w-24 md:w-28" variant="ghost">
-        <Link href="/contact" className="px-4 md:px-10">
+
+      <Link href="/contact">
+        <Button variant="ghost" className="text-sm md:text-md w-24 md:w-28">
           Contact
-        </Link>
-      </Button>
+        </Button>
+      </Link>
+
       <Separator
         orientation="vertical"
         className="hidden md:block h-6 mx-2 mr-8"
       />
+
       <ModeToggle />
     </nav>
   );

@@ -25,14 +25,13 @@ export default function Home() {
               finding wisdom and inspiration in their pages.
             </p>
             <div className="flex mt-5">
-              <Button className="text-md">
-                <Link href="/journey">Learn more about me</Link>
-              </Button>
-              <Button className="text-md ml-1.5">
-                <Link href="/Giovanni_s_Resume.pdf" download>
-                  Download CV
-                </Link>
-              </Button>
+              <Link href="/journey">
+                <Button className="text-md">Learn more about me</Button>
+              </Link>
+
+              <Link href="/Giovanni_s_Resume.pdf" download>
+                <Button className="text-md ml-1.5">Download CV</Button>
+              </Link>
             </div>
             <p className="mt-5 text-muted-foreground text-lg">Find me on:</p>
             <div className="flex mt-5">
