@@ -16,11 +16,7 @@ const ContactPage = () => {
             <Label className="mb-1" htmlFor="email">
               E-mail
             </Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="giovanni.vicentin@email.com"
-            />
+            <Input id="email" type="email" placeholder="username@domain.com" />
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
             <Label className="mb-1" htmlFor="subject">
