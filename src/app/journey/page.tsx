@@ -1,7 +1,7 @@
 const JourneyPage = () => {
   return (
     <div className="flex flex-col items-center p-4 md:px-24">
-      <div className="max-w-5xl w-full text-center py-6">
+      <div className="max-w-4xl w-full text-center py-6">
         <h1 className="text-3xl mb-6">My Journey</h1>
         <h2 className="text-xl mb-6 text-justify leading-relaxed">
           Hi there! I'm{' '}
