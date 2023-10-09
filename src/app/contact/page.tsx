@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import LoadingScreen from '@/components/loading-screen';
 import { Label } from '@/components/ui/label';
 import { Input } from '../../components/ui/input';
 import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
@@ -9,8 +10,19 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const ContactPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [charCount, setCharCount] = useState(0);
   const [hasReachedLimit, setHasReachedLimit] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) return <LoadingScreen />;
 
   const handleInputChange = (e: any) => {
     const inputValue = e.target.value;
