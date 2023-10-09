@@ -13,7 +13,7 @@ export default function Home() {
             <h1 className="text-3xl">Welcome to my portfolio website!</h1>
             <h2 className="text-2xl mt-2">
               I'm happy you've visited. I'm{' '}
-              <span className="dark:text-violet-400 text-violet-700 border-b border-muted">
+              <span className="dark:text-violet-400 text-violet-700">
                 Giovanni Vicentin
               </span>
               .
