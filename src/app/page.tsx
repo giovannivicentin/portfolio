@@ -56,8 +56,8 @@ export default function Home() {
             src="/profile.png"
             width={150}
             height={150}
-            alt="AI Profile Image"
-            className="rounded-full"
+            alt="Profile Image"
+            className="rounded-full mx-auto mb-10 sm:mx-0 sm:mb-0"
           ></Image>
         </div>
       </div>
