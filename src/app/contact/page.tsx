@@ -40,20 +40,22 @@ const ContactPage = () => {
             />
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
-            <Button className="w-full mt-2 font-bold">Send</Button>
+            <Button className="w-full mt-2 font-bold transition-transform transform hover:scale-110">
+              Send
+            </Button>
           </div>
           <div className="flex pt-8 gap-2">
             <Link href="https://github.com/giovannivicentin">
-              <GitHubLogoIcon className="w-7 h-7 ml-4" />
+              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
             </Link>
             <Link href="https://www.linkedin.com/in/giovannivicentin/">
-              <LinkedInLogoIcon className="w-7 h-7 ml-4" />
+              <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
             </Link>
             <Link href="https://wa.me//5511942010707?text=Hey%20Giovanni">
-              <RiWhatsappFill className="w-7 h-7 ml-4" />
+              <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
             </Link>
             <Link href="mailto:giovannifvicentin@gmail.com">
-              <TbMailFilled className="w-7 h-7 ml-4" />
+              <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
             </Link>
           </div>
         </div>

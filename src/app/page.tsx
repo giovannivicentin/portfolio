@@ -26,23 +26,27 @@ export default function Home() {
             </p>
             <div className="flex mt-5">
               <Link href="/journey">
-                <Button className="text-md">Learn more about me</Button>
+                <Button className="text-md transition-transform transform hover:scale-105">
+                  Learn more about me
+                </Button>
               </Link>
 
               <Link href="/Giovanni_s_Resume.pdf" download>
-                <Button className="text-md ml-1.5">Download CV</Button>
+                <Button className="text-md ml-1.5 transition-transform transform hover:scale-105">
+                  Download CV
+                </Button>
               </Link>
             </div>
             <p className="mt-5 text-muted-foreground text-lg">Find me on:</p>
             <div className="flex mt-5">
               <Link href="https://www.linkedin.com/in/giovannivicentin/">
                 {' '}
-                <LinkedInLogoIcon className="w-7 h-7" />
+                <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110" />
               </Link>
 
               <Link href="https://github.com/giovannivicentin">
                 {' '}
-                <GitHubLogoIcon className="w-7 h-7 ml-4" />
+                <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
               </Link>
             </div>
             <TechStack />
