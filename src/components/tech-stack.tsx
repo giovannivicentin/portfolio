@@ -33,7 +33,7 @@ function TechStack() {
           <div className="flex">
             <Separator orientation="vertical" className="h-7 ml-2 mr-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('html')}
             >
               <Image
@@ -41,12 +41,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="html icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('js')}
             >
               <Image
@@ -54,12 +54,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="js icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('tailwind')}
             >
               <Image
@@ -67,12 +67,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="tailwind icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('react')}
             >
               <Image
@@ -80,12 +80,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="react icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('node')}
             >
               <Image
@@ -93,12 +93,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="node icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('sql')}
             >
               <Image
@@ -106,12 +106,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="sql icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('git')}
             >
               <Image
@@ -119,14 +119,14 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="git icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
           </div>
           <div className="mt-1 flex">
             <Separator orientation="vertical" className="h-7 ml-2 mr-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('css')}
             >
               <Image
@@ -134,12 +134,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="css icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('ts')}
             >
               <Image
@@ -147,25 +147,27 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="ts icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent"
               onClick={() => setSelectedTech('sass')}
             >
-              <Image
-                src="/sass.png"
-                width={25}
-                height={25}
-                alt="sass icon"
-                className="dark:invert"
-              />
+              <div className="image-container">
+                <Image
+                  src="/sass.png"
+                  width={25}
+                  height={25}
+                  alt="sass icon"
+                  className="dark:invert image-hover-effect bg-transparent"
+                />
+              </div>
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('next')}
             >
               <Image
@@ -173,12 +175,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="next icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('nest')}
             >
               <Image
@@ -186,12 +188,12 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="nest icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('mysql')}
             >
               <Image
@@ -199,21 +201,23 @@ function TechStack() {
                 width={25}
                 height={25}
                 alt="mysql icon"
-                className="dark:invert"
+                className="dark:invert image-hover-effect bg-transparent"
               />
             </button>
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
-              className="transition-transform transform hover:scale-110 p-1"
+              className="button-container p-1 bg-transparent transition-transform transform hover:scale-110"
               onClick={() => setSelectedTech('python')}
             >
-              <Image
-                src="/python.png"
-                width={25}
-                height={25}
-                alt="python icon"
-                className="dark:invert"
-              />
+              <div className="image-container">
+                <Image
+                  src="/python.png"
+                  width={25}
+                  height={25}
+                  alt="python icon"
+                  className="dark:invert image-hover-effect bg-transparent"
+                />
+              </div>
             </button>
           </div>
         </div>

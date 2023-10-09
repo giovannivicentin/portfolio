@@ -6,19 +6,19 @@ function Footer() {
         <div className="flex gap-10">
           <a
             href="https://www.linkedin.com/in/giovannivicentin/"
-            className="text-muted-foreground hover:text-primary"
+            className="text-muted-foreground hover:text-primary hover:dark:text-violet-400 hover:text-violet-700"
           >
             LinkedIn
           </a>
           <a
             href="https://github.com/giovannivicentin"
-            className="text-muted-foreground hover:text-primary"
+            className="text-muted-foreground hover:text-primary hover:dark:text-violet-400 hover:text-violet-700"
           >
             GitHub
           </a>
           <a
             href="mailto:giovannifvicentin@gmail.com"
-            className="text-muted-foreground hover:text-primary"
+            className="text-muted-foreground hover:dark:text-violet-400 hover:text-violet-700"
           >
             E-mail
           </a>

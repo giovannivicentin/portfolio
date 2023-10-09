@@ -67,22 +67,22 @@ const ContactPage = () => {
             </span>
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
-            <Button className="w-full mt-2 font-bold transition-transform transform hover:scale-105">
+            <Button className="w-full mt-2 font-bold transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
               Send
             </Button>
           </div>
           <div className="flex pt-8 gap-2">
             <Link href="https://github.com/giovannivicentin">
-              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
+              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
             <Link href="https://www.linkedin.com/in/giovannivicentin/">
-              <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
+              <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
             <Link href="https://wa.me//5511942010707?text=Hey%20Giovanni">
-              <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
+              <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
             <Link href="mailto:giovannifvicentin@gmail.com">
-              <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
+              <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
         </div>
