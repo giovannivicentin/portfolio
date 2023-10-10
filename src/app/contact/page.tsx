@@ -10,14 +10,14 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
 const ContactPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
   const [charCount, setCharCount] = useState(0);
   const [hasReachedLimit, setHasReachedLimit] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
