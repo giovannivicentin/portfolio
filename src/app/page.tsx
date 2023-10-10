@@ -40,13 +40,13 @@ export default function Home() {
           </p>
           <div className="flex mt-5">
             <Link href="/journey">
-              <Button className="text-md transition-transform transform hover:scale-105">
+              <Button className="text-md transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Learn more about me
               </Button>
             </Link>
 
             <Link href="/Giovanni_s_Resume.pdf" download>
-              <Button className="text-md ml-1.5 transition-transform transform hover:scale-105">
+              <Button className="text-md ml-1.5 transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download CV
               </Button>
             </Link>
@@ -55,12 +55,12 @@ export default function Home() {
           <div className="flex mt-5">
             <Link href="https://www.linkedin.com/in/giovannivicentin/">
               {' '}
-              <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110" />
+              <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
 
             <Link href="https://github.com/giovannivicentin">
               {' '}
-              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110" />
+              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
           <TechStack />
