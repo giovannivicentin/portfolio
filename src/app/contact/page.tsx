@@ -1,6 +1,6 @@
 'use client';
-import { useState, useEffect } from 'react';
-import LoadingScreen from '@/components/loading-screen';
+
+import React, { useState } from 'react';
 import { Label } from '@/components/ui/label';
 import { Input } from '../../components/ui/input';
 import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
@@ -8,30 +8,56 @@ import { RiWhatsappFill } from 'react-icons/ri';
 import { TbMailFilled } from 'react-icons/tb';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Resend } from 'resend';
 
 const ContactPage = () => {
+  const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
   const [charCount, setCharCount] = useState(0);
   const [hasReachedLimit, setHasReachedLimit] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 0);
+  // States for email, subject, and message.
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
 
-    return () => clearTimeout(timer);
-  }, []);
+  console.log('ContactPage rendering');
 
-  if (isLoading) return <LoadingScreen />;
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setEmail(e.target.value);
 
-  const handleInputChange = (e: any) => {
+  const handleSubjectChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setSubject(e.target.value);
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = e.target.value;
-    if (inputValue.length <= 200) {
-      setCharCount(inputValue.length);
-    } else {
-      e.target.value = inputValue.slice(0, 200);
-    }
+    setMessage(inputValue);
+    setCharCount(inputValue.length);
     setHasReachedLimit(inputValue.length >= 200);
+    if (inputValue.length > 200) {
+      setMessage(inputValue.slice(0, 200));
+    }
+  };
+
+  const handleSendClick = async () => {
+    try {
+      console.log({
+        from: 'onboarding@resend.dev',
+        to: 'giovannifvicentin@gmail.com',
+        subject: `From ${email}: ${subject}`,
+        html: `<p>Email from: ${email}</p><p>${message}</p>`,
+      });
+
+      await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: 'giovannifvicentin@gmail.com',
+        subject: `From ${email}: ${subject}`,
+        html: `<p>Email from: ${email}</p><p>${message}</p>`,
+      });
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error('Email sending error:', error);
+      alert(`Failed to send the email. Error: ${(error as Error).message}`);
+    }
   };
 
   return (
@@ -43,7 +69,13 @@ const ContactPage = () => {
             <Label className="mb-1" htmlFor="email">
               E-mail
             </Label>
-            <Input id="email" type="email" placeholder="username@domain.com" />
+            <Input
+              id="email"
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              placeholder="username@domain.com"
+            />
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
             <Label className="mb-1" htmlFor="subject">
@@ -52,6 +84,8 @@ const ContactPage = () => {
             <Input
               id="subject"
               type="text"
+              value={subject}
+              onChange={handleSubjectChange}
               placeholder="Write your subject here"
             />
           </div>
@@ -60,14 +94,14 @@ const ContactPage = () => {
               Message
             </Label>
             <Input
-              placeholder="Write your message here"
               className="pt-4 pb-20"
               id="message"
               type="text"
+              value={message}
+              onChange={handleMessageChange}
               maxLength={200}
-              onChange={handleInputChange}
+              placeholder="Write your message here"
             />
-
             <span
               className={
                 hasReachedLimit
@@ -79,7 +113,10 @@ const ContactPage = () => {
             </span>
           </div>
           <div className="flex flex-col items-start w-full max-w-md">
-            <Button className="w-full mt-2 font-bold transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
+            <Button
+              className="w-full mt-2 font-bold transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700"
+              onClick={handleSendClick}
+            >
               Send
             </Button>
           </div>
