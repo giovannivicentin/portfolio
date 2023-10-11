@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Label } from '@/components/ui/label';
 import { Input } from '../../components/ui/input';
 import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
@@ -20,8 +20,6 @@ const ContactPage = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  console.log('ContactPage rendering');
-
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setEmail(e.target.value);
 
@@ -40,13 +38,6 @@ const ContactPage = () => {
 
   const handleSendClick = async () => {
     try {
-      console.log({
-        from: 'onboarding@resend.dev',
-        to: 'giovannifvicentin@gmail.com',
-        subject: `From ${email}: ${subject}`,
-        html: `<p>Email from: ${email}</p><p>${message}</p>`,
-      });
-
       await resend.emails.send({
         from: 'onboarding@resend.dev',
         to: 'giovannifvicentin@gmail.com',
