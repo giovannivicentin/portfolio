@@ -62,6 +62,7 @@ const ContactPage = () => {
                 value={email}
                 onChange={handleEmailChange}
                 placeholder="username@domain.com"
+                autoComplete="email"
                 required
               />
             </div>
@@ -74,6 +75,7 @@ const ContactPage = () => {
                 type="text"
                 value={subject}
                 onChange={handleSubjectChange}
+                autoComplete="on"
                 placeholder="Write your subject here"
               />
             </div>
@@ -87,6 +89,7 @@ const ContactPage = () => {
                 value={message}
                 onChange={handleMessageChange}
                 maxLength={200}
+                autoComplete="on"
                 placeholder="Write your message here"
               />
               <span
