@@ -4,6 +4,7 @@ import { Poppins, Sintony } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   weight: '300',
@@ -46,6 +47,7 @@ export default function RootLayout({
             {children}
           </main>
         </ThemeProvider>
+        <Analytics />
         <footer className={`w-full max-w-4xl mb-6 ${sintony.className}`}>
           <Footer />
         </footer>
