@@ -8,16 +8,18 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center mt-20 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="flex flex-col-reverse sm:flex-row items-start">
-        <div className="flex flex-col">
-          <h1 className="text-3xl">Welcome to my portfolio website!</h1>
-          <h2 className="text-2xl mt-2">
+        <div className="flex flex-col text-justify">
+          <h1 className="text-justify text-3xl">
+            Welcome to my portfolio website!
+          </h1>
+          <h2 className="text-justify text-2xl mt-2 max-w-full">
             I'm happy you've visited. I'm{' '}
-            <span className="dark:text-violet-400 text-violet-700">
+            <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
               Giovanni Vicentin
             </span>
             .
           </h2>
-          <p className="text-lg text-muted-foreground mt-3 leading-relaxed">
+          <p className="text-justify text-lg text-muted-foreground mt-3 leading-relaxed max-w-full">
             Outside of coding, I'm a dedicated karate enthusiast. Music fuels my{' '}
             <br /> soul, especially Brazilian rap. I frequently immerse myself
             in books, <br />
@@ -30,7 +32,7 @@ export default function Home() {
               </Button>
             </Link>
             <a href="/Giovanni_s_Resume.pdf" download="Giovanni_Resume.pdf">
-              <Button className="text-md ml-1.5 transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
+              <Button className="text-md ml-4 transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download CV
               </Button>
             </a>
