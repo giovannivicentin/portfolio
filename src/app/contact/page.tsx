@@ -111,16 +111,22 @@ const ContactPage = () => {
               </Button>
             </div>
             <div className="flex pt-8 gap-2">
-              <Link href="https://github.com/giovannivicentin">
+              <Link href="https://github.com/giovannivicentin" target="_blank">
                 <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
-              <Link href="https://www.linkedin.com/in/giovannivicentin/">
+              <Link
+                href="https://www.linkedin.com/in/giovannivicentin/"
+                target="_blank"
+              >
                 <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
-              <Link href="https://wa.me//5511942010707?text=Hey%20Giovanni">
+              <Link
+                href="https://wa.me//5511942010707?text=Hey%20Giovanni"
+                target="_blank"
+              >
                 <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
-              <Link href="mailto:giovannifvicentin@gmail.com">
+              <Link href="mailto:giovannifvicentin@gmail.com" target="_blank">
                 <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
             </div>

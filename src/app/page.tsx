@@ -38,10 +38,13 @@ export default function Home() {
 
           <p className="mt-5 text-muted-foreground text-lg">Find me on:</p>
           <div className="flex mt-5">
-            <Link href="https://www.linkedin.com/in/giovannivicentin/">
+            <Link
+              href="https://www.linkedin.com/in/giovannivicentin/"
+              target="_blank"
+            >
               <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
-            <Link href="https://github.com/giovannivicentin">
+            <Link href="https://github.com/giovannivicentin" target="_blank">
               <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
