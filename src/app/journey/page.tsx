@@ -21,7 +21,7 @@ const JourneyPage = () => {
         <h1 className="text-3xl mb-6">My Journey</h1>
         <h2 className="text-xl mb-6 text-justify leading-relaxed">
           Hi there! I'm{' '}
-          <span className="dark:text-violet-400 text-violet-700">
+          <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
             Giovanni Vicentin
           </span>
           , but you can call me Gi. I'm a Software Engineer based in Brazil,
