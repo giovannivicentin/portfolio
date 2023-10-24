@@ -29,11 +29,11 @@ export default function Home() {
                 Learn more about me
               </Button>
             </Link>
-            <Link href="/Giovanni_s_Resume.pdf" download>
+            <a href="/Giovanni_s_Resume.pdf" download="Giovanni_Resume.pdf">
               <Button className="text-md ml-1.5 transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download CV
               </Button>
-            </Link>
+            </a>
           </div>
           <p className="mt-5 text-muted-foreground text-lg">Find me on:</p>
           <div className="flex mt-5">
