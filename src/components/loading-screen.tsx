@@ -1,5 +1,3 @@
-import React from 'react';
-
 const LoadingScreen = () => {
   return (
     <div className="flex items-center" style={{ height: '100vh' }}>

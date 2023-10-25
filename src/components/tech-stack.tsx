@@ -37,7 +37,7 @@ function TechStack() {
               onClick={() => setSelectedTech('html')}
             >
               <Image
-                src="/html.png"
+                src="/html.svg"
                 width={25}
                 height={25}
                 alt="html icon"
@@ -51,7 +51,7 @@ function TechStack() {
               onClick={() => setSelectedTech('js')}
             >
               <Image
-                src="/js.png"
+                src="/js.svg"
                 width={25}
                 height={25}
                 alt="js icon"
@@ -65,7 +65,7 @@ function TechStack() {
               onClick={() => setSelectedTech('tailwind')}
             >
               <Image
-                src="/tailwind.png"
+                src="/tailwind.svg"
                 width={25}
                 height={25}
                 alt="tailwind icon"
@@ -79,7 +79,7 @@ function TechStack() {
               onClick={() => setSelectedTech('react')}
             >
               <Image
-                src="/react.png"
+                src="/react.svg"
                 width={25}
                 height={25}
                 alt="react icon"
@@ -93,7 +93,7 @@ function TechStack() {
               onClick={() => setSelectedTech('node')}
             >
               <Image
-                src="/node.png"
+                src="/node.svg"
                 width={25}
                 height={25}
                 alt="node icon"
@@ -107,7 +107,7 @@ function TechStack() {
               onClick={() => setSelectedTech('sql')}
             >
               <Image
-                src="/sql.png"
+                src="/sql.svg"
                 width={25}
                 height={25}
                 alt="sql icon"
@@ -121,7 +121,7 @@ function TechStack() {
               onClick={() => setSelectedTech('git')}
             >
               <Image
-                src="/git.png"
+                src="/git.svg"
                 width={25}
                 height={25}
                 alt="git icon"
@@ -136,7 +136,7 @@ function TechStack() {
               onClick={() => setSelectedTech('css')}
             >
               <Image
-                src="/css.png"
+                src="/css.svg"
                 width={25}
                 height={25}
                 alt="css icon"
@@ -150,7 +150,7 @@ function TechStack() {
               onClick={() => setSelectedTech('ts')}
             >
               <Image
-                src="/ts.png"
+                src="/ts.svg"
                 width={25}
                 height={25}
                 alt="ts icon"
@@ -165,7 +165,7 @@ function TechStack() {
             >
               <div>
                 <Image
-                  src="/sass.png"
+                  src="/sass.svg"
                   width={25}
                   height={25}
                   alt="sass icon"
@@ -180,7 +180,7 @@ function TechStack() {
               onClick={() => setSelectedTech('next')}
             >
               <Image
-                src="/next.png"
+                src="/next.svg"
                 width={25}
                 height={25}
                 alt="next icon"
@@ -194,7 +194,7 @@ function TechStack() {
               onClick={() => setSelectedTech('nest')}
             >
               <Image
-                src="/nest.png"
+                src="/nest.svg"
                 width={25}
                 height={25}
                 alt="nest icon"
@@ -208,7 +208,7 @@ function TechStack() {
               onClick={() => setSelectedTech('mysql')}
             >
               <Image
-                src="/mysql.png"
+                src="/mysql.svg"
                 width={25}
                 height={25}
                 alt="mysql icon"
@@ -223,7 +223,7 @@ function TechStack() {
             >
               <div>
                 <Image
-                  src="/python.png"
+                  src="/python.svg"
                   width={25}
                   height={25}
                   alt="python icon"
