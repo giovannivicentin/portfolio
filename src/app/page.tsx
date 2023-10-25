@@ -6,24 +6,27 @@ import TechStack from '@/components/tech-stack';
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center mt-20 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col justify-center items-center mt-10 sm:mt-20 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="flex flex-col-reverse sm:flex-row items-start">
         <div className="flex flex-col">
-          <h1 className="text-3xl">Welcome to my portfolio website!</h1>
-          <h2 className="text-2xl mt-2 max-w-full">
-            I'm happy you've visited. I'm{' '}
-            <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
-              Giovanni Vicentin
-            </span>
-            .
-          </h2>
-          <p className="text-lg text-muted-foreground mt-3 leading-relaxed max-w-full">
-            Outside of coding, I'm a dedicated karate enthusiast. Music fuels my{' '}
-            <br /> soul, especially Brazilian rap. I frequently immerse myself
-            in books, <br />
-            finding wisdom and inspiration in their pages.
-          </p>
-          <div className="mt-5 flex flex-col md:flex-row">
+          <div className="items-center text-center max-w-4xl w-full">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl text-justify leading-relaxed">
+              Welcome to my portfolio website!
+            </h1>
+            <h2 className="text-xl sm:text-2xl mt-7 sm:mt-4 max-w-xl text-justify leading-relaxed">
+              I'm happy you've visited. I'm{' '}
+              <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
+                Giovanni Vicentin
+              </span>
+              .
+            </h2>
+            <p className="text-lg text-muted-foreground mt-7 sm:mt-4 max-w-xl text-justify leading-relaxed">
+              Outside of coding, I'm a dedicated karate enthusiast. Music fuels
+              my soul, especially Brazilian rap. I frequently immerse myself in
+              books, finding wisdom and inspiration in their pages.
+            </p>
+          </div>
+          <div className="mt-7 sm:mt-4 flex flex-col md:flex-row">
             <Link href="/journey" prefetch>
               <Button className="text-sm md:text-md w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Learn more about me
