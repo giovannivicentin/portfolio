@@ -75,15 +75,19 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className={`w-full max-w-4xl text-sm mt-6 ${sintony.className}`}>
+          <div
+            className={`w-full max-w-full sm:max-w-4xl text-sm mt-6 ${sintony.className}`}
+          >
             <Navbar />
           </div>
-          <main className="flex-1 w-full max-w-5xl px-4 md:px-0">
+          <main className="flex-1 w-full max-w-full px-4 md:px-0">
             {children}
           </main>
         </ThemeProvider>
         <Analytics />
-        <footer className={`w-full max-w-4xl mb-6 ${sintony.className}`}>
+        <footer
+          className={`w-full max-w-full sm:max-w-4xl mb-6 ${sintony.className}`}
+        >
           <Footer />
         </footer>
       </body>

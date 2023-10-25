@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className="w-full max-w-4xl flex flex-wrap items-center justify-center border-b border-muted-foreground/40 p-1">
+    <nav className="w-full flex flex-wrap items-center justify-center border-b border-muted-foreground/40 p-1 sm:gap-x-1 md:gap-x-2">
       <Link href="/">
         <Button
           variant="ghost"
-          className="p-2 md:p-3 lg:p-4 text-xs sm:text-sm md:text-md lg:text-lg w-18 sm:w-20 md:w-28 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
+          className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
           Home
         </Button>
@@ -23,7 +23,7 @@ function Navbar() {
       <Link href="/journey">
         <Button
           variant="ghost"
-          className="p-2 md:p-3 lg:p-4 text-xs sm:text-sm md:text-md lg:text-lg w-18 sm:w-20 md:w-28 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
+          className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
           Journey
         </Button>
@@ -37,7 +37,7 @@ function Navbar() {
       <Link href="/projects">
         <Button
           variant="ghost"
-          className="p-2 md:p-3 lg:p-4 text-xs sm:text-sm md:text-md lg:text-lg w-18 sm:w-20 md:w-28 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
+          className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
           Projects
         </Button>
@@ -51,7 +51,7 @@ function Navbar() {
       <Link href="/contact">
         <Button
           variant="ghost"
-          className="p-2 md:p-3 lg:p-4 text-xs sm:text-sm md:text-md lg:text-lg w-18 sm:w-20 md:w-28 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
+          className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
           Contact
         </Button>

@@ -9,11 +9,11 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center mt-10 sm:mt-20 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="flex flex-col-reverse sm:flex-row items-start">
         <div className="flex flex-col">
-          <div className="items-center text-center max-w-4xl w-full">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl text-justify leading-relaxed">
+          <div className="sm:items-center sm:text-center max-w-4xl w-full">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl sm:text-justify leading-relaxed">
               Welcome to my portfolio website!
             </h1>
-            <h2 className="text-xl sm:text-2xl mt-7 sm:mt-4 max-w-xl text-justify leading-relaxed">
+            <h2 className="text-xl sm:text-2xl mt-7 sm:mt-4 max-w-xl sm:text-justify leading-relaxed">
               I'm happy you've visited. I'm{' '}
               <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
                 Giovanni Vicentin
@@ -28,12 +28,12 @@ export default function Home() {
           </div>
           <div className="mt-7 sm:mt-4 flex flex-col md:flex-row">
             <Link href="/journey" prefetch>
-              <Button className="text-sm md:text-md w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
+              <Button className="text-md md:text-lg w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Learn more about me
               </Button>
             </Link>
             <a href="/Giovanni_s_Resume.pdf" download="Giovanni_Resume.pdf">
-              <Button className="text-sm md:text-md mt-4 md:mt-0 md:ml-4 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
+              <Button className="text-md md:text-lg mt-4 md:mt-0 md:ml-4 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download CV
               </Button>
             </a>
@@ -58,7 +58,7 @@ export default function Home() {
           width={150}
           height={150}
           alt="Profile Image"
-          className="rounded-full mx-auto mb-10 sm:mx-0 sm:mb-0"
+          className="rounded-full mx-auto mb-10 sm:mx-0 sm:mb-0 border-collapse border-2 border-primary/50 animate-fadeIn"
           priority
         ></Image>
       </div>

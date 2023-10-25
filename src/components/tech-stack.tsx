@@ -33,7 +33,8 @@ function TechStack() {
           <div className="flex">
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('html')}
             >
               <Image
@@ -47,7 +48,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('js')}
             >
               <Image
@@ -61,7 +63,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('tailwind')}
             >
               <Image
@@ -75,7 +78,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('react')}
             >
               <Image
@@ -89,7 +93,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full 
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('node')}
             >
               <Image
@@ -103,7 +108,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full 
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('sql')}
             >
               <Image
@@ -117,7 +123,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('git')}
             >
               <Image
@@ -132,7 +139,8 @@ function TechStack() {
           <div className="mt-1 flex">
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('css')}
             >
               <Image
@@ -146,7 +154,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('ts')}
             >
               <Image
@@ -160,7 +169,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+              before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('sass')}
             >
               <div>
@@ -176,7 +186,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+                before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('next')}
             >
               <Image
@@ -190,7 +201,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+                before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('nest')}
             >
               <Image
@@ -204,7 +216,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+                before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('mysql')}
             >
               <Image
@@ -218,7 +231,8 @@ function TechStack() {
             <Separator orientation="vertical" className="h-7 mx-1" />
             <button
               className="relative p-1 isolation-auto z-10 rounded-md
-    before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
+                before:absolute before:w-full before:transition-all before:duration-400 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full
+                before:bg-violet-500 before:dark:bg-violet-400 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-400"
               onClick={() => setSelectedTech('python')}
             >
               <div>
@@ -234,7 +248,7 @@ function TechStack() {
           </div>
         </div>
       </div>
-      <div className="mt-10 text-md items-start text-muted-foreground">
+      <div className="mt-10 text-md sm:text-lg items-start text-muted-foreground">
         {selectedTech
           ? techDescriptions[selectedTech]
           : 'Click in a tech icon to know more about it.'}
