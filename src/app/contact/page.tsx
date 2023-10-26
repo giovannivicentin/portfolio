@@ -36,7 +36,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="flex flex-col p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="max-w-4xl w-full py-6">
         <h1 className="text-3xl mb-6 text-center">Contact</h1>
         <form
