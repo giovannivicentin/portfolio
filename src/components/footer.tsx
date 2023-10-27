@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function Footer() {
   return (
     <footer className="w-full px-4 pt-2 md:px-6 lg:px-10 flex justify-center items-center border-t border-muted-foreground/40 mt-5">
@@ -6,24 +8,31 @@ function Footer() {
           © 2023 Giovanni Vicentin
         </p>
         <div className="flex gap-10">
-          <a
-            href="https://www.linkedin.com/in/giovannivicentin/"
+          <Link
             className="text-muted-foreground hover:text-primary hover:dark:text-violet-400 hover:text-violet-700"
+            href="https://www.linkedin.com/in/giovannivicentin/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
-          <a
-            href="https://github.com/giovannivicentin"
+          </Link>
+
+          <Link
             className="text-muted-foreground hover:text-primary hover:dark:text-violet-400 hover:text-violet-700"
+            href="https://github.com/giovannivicentin"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             GitHub
-          </a>
-          <a
-            href="mailto:giovannifvicentin@gmail.com"
+          </Link>
+          <Link
             className="text-muted-foreground hover:dark:text-violet-400 hover:text-violet-700"
+            href="mailto:giovannifvicentin@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             E-mail
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

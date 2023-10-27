@@ -44,10 +44,15 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/giovannivicentin/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
-            <Link href="https://github.com/giovannivicentin" target="_blank">
+            <Link
+              href="https://github.com/giovannivicentin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
