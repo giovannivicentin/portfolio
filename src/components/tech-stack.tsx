@@ -246,12 +246,12 @@ function TechStack() {
               </div>
             </button>
           </div>
+          <div className="max-w-xl my-10 text-md sm:text-lg justify-center text-muted-foreground">
+            {selectedTech
+              ? techDescriptions[selectedTech]
+              : 'Click in a tech icon to know more about it.'}
+          </div>
         </div>
-      </div>
-      <div className="mt-10 text-md sm:text-lg items-start text-muted-foreground">
-        {selectedTech
-          ? techDescriptions[selectedTech]
-          : 'Click in a tech icon to know more about it.'}
       </div>
     </>
   );
