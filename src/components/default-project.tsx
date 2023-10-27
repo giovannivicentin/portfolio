@@ -21,7 +21,7 @@ const DefaultProject: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col xs:flex-row gap-x-6 xl:gap-x-12 items-center sm:items-stretch ${
+      className={`flex flex-col sm:flex-row gap-x-6 xl:gap-x-12 items-center sm:items-stretch ${
         reverse ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row'
       }`}
     >
@@ -36,7 +36,7 @@ const DefaultProject: React.FC<Props> = ({
         />
       </div>
       <div className="w-1/2 flex flex-col justify-between">
-        <p className="text-muted-foreground pt-2 xs:pt-0 overflow-auto break-words">
+        <p className="text-muted-foreground pt-2 sm:pt-0 overflow-auto break-words">
           {explanation}
         </p>
         <div className="flex mt-4 justify-center">
