@@ -49,6 +49,12 @@ const ContactPage = () => {
             });
             const data = await response.json();
             console.log(data);
+
+            if (data.success) {
+              window.alert('Email sent successfully!');
+            } else {
+              window.alert('Failed to send email. Please try again.');
+            }
           }}
         >
           <div className="flex flex-col items-center space-y-2">
