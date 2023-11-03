@@ -1,20 +1,4 @@
-'use client';
-import { useState, useEffect } from 'react';
-import LoadingScreen from '@/components/loading-screen';
-
 const JourneyPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 0);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) return <LoadingScreen />;
-
   return (
     <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="max-w-4xl w-full text-center py-6">
