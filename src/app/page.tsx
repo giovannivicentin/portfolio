@@ -32,7 +32,10 @@ export default function Home() {
                 Learn more about me
               </Button>
             </Link>
-            <a href="/Giovanni_s_Resume.pdf" download="Giovanni_Resume.pdf">
+            <a
+              href="/Giovanni_Vicentin_CV.pdf"
+              download="Giovanni_Vicentin_CV.pdf"
+            >
               <Button className="text-md md:text-lg mt-4 md:mt-0 md:ml-4 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download CV
               </Button>
