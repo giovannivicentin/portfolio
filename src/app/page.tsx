@@ -21,7 +21,7 @@ export default function Home() {
               .
             </h2>
             <p className="text-lg text-muted-foreground mt-7 sm:mt-4 max-w-xl text-justify leading-relaxed">
-              Além da programação, dedico-me ao karate shotokan, que equilibra
+              Além da programação, dedico-me ao karatê shotokan, que equilibra
               mente e corpo. A música, especialmente o rap brasileiro, energiza
               e inspira meu dia a dia. Sou também apaixonado por leitura, sempre
               em busca de novos conhecimentos e visões de mundo através dos
