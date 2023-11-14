@@ -22,7 +22,7 @@ const sintony = Sintony({
 export const metadata: Metadata = {
   title: 'Giovanni Vicentin - Portifólio Profissional',
   description:
-    'Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria.',
+    'Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional.',
   authors: [{ name: 'Giovanni Vicentin' }],
   metadataBase: new URL('https://giovannivicentn.com'),
 };
@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta name="author" content="Giovanni Vicentin" />
         <meta
           name="description"
-          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria."
+          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional."
         />
         <meta
           name="keywords"
@@ -54,7 +54,7 @@ export default function RootLayout({
         />
         <meta
           property="og:description"
-          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria."
+          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional."
         />
         <meta property="og:image" content="public\logo.png" />
         <meta property="og:url" content="https://www.giovannivicentin.com" />
