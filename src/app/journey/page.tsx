@@ -2,59 +2,76 @@ const JourneyPage = () => {
   return (
     <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="max-w-4xl w-full text-center py-6">
-        <h1 className="text-3xl mb-6">My Journey</h1>
+        <h1 className="text-3xl mb-6">Minha Jornada</h1>
         <h2 className="text-xl mb-6 text-justify leading-relaxed">
-          Hi there! I'm{' '}
+          Olá! Eu sou{' '}
           <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
             Giovanni Vicentin
           </span>
-          , but you can call me Gi. I'm a Software Engineer based in Brazil,
-          currently working as a Full Stack Developer at Talst, a startup.
+          , mas pode me chamar de Gi. Sou um Engenheiro de Software no Brasil,
+          atualmente trabalhando como Desenvolvedor Full Stack na Talst, uma
+          startup na área de tecnologia.
         </h2>
         <p className="mb-6 text-justify leading-relaxed">
-          Ever since my childhood, I've been drawn to creating and solving
-          problems. This is why mathematics has always been my favorite subject
-          in school—it consistently presented challenges that pushed me to find
-          solutions. In high school, I found myself torn between mathematics and
-          philosophy, both of which made me deeply reflect on the everyday
-          issues we face.
+          Desde a infância, sempre fui atraído por criar e resolver problemas.
+          Por isso, matemática sempre foi minha matéria favorita na escola,
+          sempre apresentando desafios que me impulsionavam a encontrar
+          soluções. No ensino médio, me vi dividido entre matemática e
+          filosofia, ambas me fazendo refletir profundamente sobre questões do
+          cotidiano.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          I grew up playing on computers, and I'll admit, it turned me into a
-          computer enthusiast. I was the go-to person for fixing computer issues
-          for my friends and family, often consulting forums or videos—just like
-          many developers do. This experience nurtured my autodidactic nature
-          and deepened my love for technology.
+          Cresci jogando em computadores e admito que isso me tornou um
+          entusiasta da tecnologia. Sempre fui a pessoa que amigos e família
+          procuravam para resolver problemas de computador, muitas vezes
+          consultando fóruns ou vídeos. Essa experiência nutriu minha natureza
+          autodidata e aprofundou meu amor pela tecnologia.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          I began my journey with programming in 2020 when I was 16 years old.
-          However, my battle with depression took a toll, causing me to hit a
-          standstill. I picked up my studies again in 2021 and I've been loving
-          it ever since. This experience has shaped me into a resilient
-          individual who continually perseveres, never ceasing to learn and grow
-          in the realm of programming.
+          Comecei minha jornada com programação em 2020, aos 16 anos. No
+          entanto, minha luta contra a depressão foi um obstáculo, causando uma
+          pausa. Retomei os estudos em 2021 e desde então venho amando a
+          experiência. Isso me moldou em alguém resiliente, que sempre
+          persevera, nunca deixando de aprender e crescer na área de
+          programação.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          I began my career as a software engineer in 2022, specializing in
-          backend development using Python, MySQL, and VBA. During this time, I
-          worked on creating Robotic Process Automation (RPA) solutions and
-          streamlined processes for automation. This experience solidified my
-          understanding of algorithms, logic, UML, databases, and the dynamics
-          of a technology team. After six months, I transitioned to using NodeJS
-          as part of my tech stack, integrating technologies such as TypeScript,
-          NestJS, and TypeORM, while continuing with MySQL. This period was
-          transformative as I honed my skills in CRUD operations, API
-          development, and project architecture and realized the significance of
-          documentation and the impact of agile methodologies on productivity.
-          Another six months later, I delved into frontend development, working
-          with React, Next.js, and Tailwind. This phase enriched my perspective
-          on the client side of applications, and interface design, and
-          underscored the notion that FrontEnd development is as challenging and
-          rewarding as backend. It's a journey I genuinely relish.
+          Iniciei minha carreira como engenheiro de software em 2022, me
+          especializando em desenvolvimento back-end com Python, MySQL e VBA.
+          Durante esse período, trabalhei na criação de soluções de Automação de
+          Processos Robóticos (RPA) e na otimização de processos para automação.
+          Essa experiência solidificou meu entendimento sobre algoritmos,
+          lógica, UML, bancos de dados e a dinâmica de uma equipe de tecnologia.
+          Após seis meses, transitei para usar NodeJS em stack diária em
+          desenvolvimento, integrando tecnologias como TypeScript, NestJS,
+          Prisma, Swagger... enquanto continuava com MySQL. Esse período foi
+          transformador, aprimorei minhas habilidades em operações CRUD,
+          desenvolvimento de APIs e arquitetura de projetos, e percebi a
+          importância da documentação e o impacto das metodologias ágeis na
+          produtividade. Seis meses depois, mergulhei no desenvolvimento
+          front-end, trabalhando com React, Next.js e Tailwind. Essa fase
+          enriqueceu minha perspectiva sobre o lado cliente das aplicações,
+          design de interface e reforçou a ideia de que o desenvolvimento
+          front-end é tão desafiador e gratificante quanto o back-end. É uma
+          jornada que eu realmente aprecio.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          I'm currently working as a Full Stack Developer, with all those
-          technologies, depending on the project.
+          Atualmente, estou atuando como Desenvolvedor Full Stack na Talst, uma
+          startup inovadora, onde aplico meu vasto conhecimento em tecnologias
+          diversas. Essa posição me permite não apenas desenvolver soluções
+          técnicas integradas, mas também me envolver em todos os aspectos do
+          ciclo de vida do desenvolvimento de software. Aqui, tenho a
+          oportunidade de liderar projetos, mentorar colegas mais novos e
+          colaborar com equipes interdisciplinares para entregar produtos que
+          realmente fazem a diferença na vida das pessoas.
+        </p>
+        <p className="mb-6 text-justify leading-relaxed">
+          Olhando para o futuro, estou entusiasmado com as possibilidades
+          ilimitadas. Planejo continuar me aprimorando e começar a focar mais em
+          projetos pessoais, talvez até iniciar minha própria startup um dia. O
+          mais importante para mim é continuar fazendo um trabalho que não
+          apenas desafie minha mente, mas também contribua positivamente para a
+          sociedade.
         </p>
       </div>
     </div>

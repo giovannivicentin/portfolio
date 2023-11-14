@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="pt-br"
       className={`flex min-h-screen flex-col items-center justify-between bg-background text-foreground md:px-24 ${poppins.className}`}
     >
       <Head>

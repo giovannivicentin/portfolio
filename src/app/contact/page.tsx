@@ -38,7 +38,7 @@ const ContactPage = () => {
   return (
     <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
       <div className="max-w-4xl w-full py-6">
-        <h1 className="text-3xl mb-6 text-center">Contact</h1>
+        <h1 className="text-3xl mb-6 text-center">Contato</h1>
         <form
           onSubmit={async (event) => {
             event.preventDefault();
@@ -51,14 +51,16 @@ const ContactPage = () => {
             console.log(data);
 
             if (data.success) {
-              window.alert('E-mail sent successfully!');
+              window.alert('E-mail enviado com sucesso!');
               setEmail('');
               setSubject('');
               setMessage('');
               setCharCount(0);
               setHasReachedLimit(false);
             } else {
-              window.alert('Failed to send e-mail. Please try again.');
+              window.alert(
+                'Erro ao enviar o e-mail. Tente novamente mais tarde.',
+              );
             }
           }}
         >
@@ -72,14 +74,14 @@ const ContactPage = () => {
                 type="email"
                 value={email}
                 onChange={handleEmailChange}
-                placeholder="username@domain.com"
+                placeholder="usuario@dominio.com"
                 autoComplete="email"
                 required
               />
             </div>
             <div className="flex flex-col items-start w-full max-w-md">
               <Label className="mb-1" htmlFor="subject">
-                Subject
+                Assunto
               </Label>
               <Input
                 id="subject"
@@ -87,12 +89,12 @@ const ContactPage = () => {
                 value={subject}
                 onChange={handleSubjectChange}
                 autoComplete="on"
-                placeholder="Write your subject here"
+                placeholder="Escreva o assunto aqui."
               />
             </div>
             <div className="flex flex-col items-start w-full max-w-md">
               <Label className="mb-1" htmlFor="message">
-                Message
+                Mensagem
               </Label>
               <Textarea
                 className="resize-none leading-relaxed pt-4 pb-20 overflow-hidden"
@@ -101,7 +103,7 @@ const ContactPage = () => {
                 onChange={handleMessageChange}
                 maxLength={200}
                 autoComplete="on"
-                placeholder="Write your message here"
+                placeholder="Escreva sua mensagem aqui."
               />
               <span
                 className={
@@ -118,7 +120,7 @@ const ContactPage = () => {
                 type="submit"
                 className="w-full mt-2 font-bold transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700"
               >
-                Send
+                Enviar
               </Button>
             </div>
             <div className="flex pt-8 gap-2">
@@ -137,7 +139,7 @@ const ContactPage = () => {
                 <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
               <Link
-                href="https://wa.me//5511942010707?text=Hey%20Giovanni"
+                href="https://wa.me//5511942010707?text=Olá%20Giovanni"
                 target="_blank"
                 rel="noopener noreferrer"
               >

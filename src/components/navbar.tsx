@@ -11,7 +11,7 @@ function Navbar() {
           variant="ghost"
           className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
-          Home
+          Início
         </Button>
       </Link>
 
@@ -25,7 +25,7 @@ function Navbar() {
           variant="ghost"
           className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
-          Journey
+          Jornada
         </Button>
       </Link>
 
@@ -39,7 +39,7 @@ function Navbar() {
           variant="ghost"
           className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
-          Projects
+          Projetos
         </Button>
       </Link>
 
@@ -53,7 +53,7 @@ function Navbar() {
           variant="ghost"
           className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
         >
-          Contact
+          Contato
         </Button>
       </Link>
 

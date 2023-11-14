@@ -4,20 +4,22 @@ import { Separator } from './ui/separator';
 import Image from 'next/image';
 
 const techDescriptions = {
-  html: 'HTML is the standard markup language for creating web pages.',
-  js: 'JavaScript is a programming language that enables interactive web pages.',
-  tailwind: 'Tailwind CSS is a utility-based CSS framework.',
-  react: 'React is a JavaScript library for building user interfaces.',
-  node: 'Node.js is a JavaScript runtime environment based on Chrome V8 engine.',
-  sql: 'SQL is a language specific to managing and querying databases.',
-  git: 'Git is a distributed version control system.',
-  css: 'CSS is a stylesheet language used to describe the look of a document.',
-  ts: 'TypeScript is a superset of JavaScript with optional static typing.',
-  sass: 'Sass is a scripting preprocessor language that compiles into CSS.',
-  next: 'Next.js is a React framework for server-side rendered applications.',
-  nest: 'Nest.js: Efficient, Scalable Server-Side Node.js Framework.',
-  mysql: 'MySQL is an open-source relational database management system.',
-  python: 'Python is a popular high-level programming language.',
+  html: 'HTML é a linguagem padrão de marcação para criação de páginas web.',
+  js: 'JavaScript é uma linguagem de programação que permite páginas web interativas.',
+  tailwind: 'Tailwind CSS é um framework CSS baseado em utilidades.',
+  react:
+    'React é uma biblioteca JavaScript para construção de interfaces de usuário.',
+  node: 'Node.js é um ambiente de execução JavaScript baseado no motor Chrome V8.',
+  sql: 'SQL é uma linguagem específica para gerenciamento e consulta de bancos de dados.',
+  git: 'Git é um sistema de controle de versão distribuído.',
+  css: 'CSS é uma linguagem de folhas de estilo usada para descrever a aparência de um documento.',
+  ts: 'TypeScript é um superset de JavaScript com tipagem estática opcional.',
+  sass: 'Sass é uma linguagem de script pré-processador que compila em CSS.',
+  next: 'Next.js é um framework React para aplicações renderizadas no lado do servidor.',
+  nest: 'Nest.js: Framework Node.js eficiente e escalável para o lado do servidor.',
+  mysql:
+    'MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto.',
+  python: 'Python é uma linguagem de programação de alto nível muito popular.',
 };
 
 function TechStack() {
@@ -249,7 +251,7 @@ function TechStack() {
           <div className="max-w-xl my-10 text-md sm:text-lg justify-center text-muted-foreground">
             {selectedTech
               ? techDescriptions[selectedTech]
-              : 'Click in a tech icon to know more about it.'}
+              : 'Clique em um ícone da stack para saber mais sobre ele.'}
           </div>
         </div>
       </div>

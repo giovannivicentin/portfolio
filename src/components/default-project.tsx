@@ -38,10 +38,10 @@ const DefaultProject: React.FC<Props> = ({
         </Link>
       </div>
       <div className="w-1/2 flex flex-col justify-between">
-        <p className="text-muted-foreground pt-2 sm:pt-4 overflow-auto break-words">
+        <p className="text-muted-foreground pt-2 sm:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
           {explanation}
         </p>
-        <div className="flex mt-4 justify-center sm:pb-4">
+        <div className="flex mt-4 justify-center sm:pb-0">
           <Link href={hrefGithub} target="_blank" rel="noopener noreferrer">
             <RxGithubLogo className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
