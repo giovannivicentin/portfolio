@@ -51,9 +51,14 @@ const ContactPage = () => {
             console.log(data);
 
             if (data.success) {
-              window.alert('Email sent successfully!');
+              window.alert('E-mail sent successfully!');
+              setEmail('');
+              setSubject('');
+              setMessage('');
+              setCharCount(0);
+              setHasReachedLimit(false);
             } else {
-              window.alert('Failed to send email. Please try again.');
+              window.alert('Failed to send e-mail. Please try again.');
             }
           }}
         >
