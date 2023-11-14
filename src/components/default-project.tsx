@@ -26,20 +26,22 @@ const DefaultProject: React.FC<Props> = ({
       }`}
     >
       <div className="w-1/2">
-        <Image
-          src={photo}
-          alt={photoAlt}
-          layout="responsive"
-          width={500}
-          height={500}
-          className="border-collapse border-2 rounded-md border-primary/50"
-        />
+        <Link href={hrefLive} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={photo}
+            alt={photoAlt}
+            layout="responsive"
+            width={500}
+            height={500}
+            className="border-collapse border-2 rounded-md border-primary/50 hover:dark:border-violet-400 hover:border-violet-700 transition-colors"
+          />
+        </Link>
       </div>
       <div className="w-1/2 flex flex-col justify-between">
-        <p className="text-muted-foreground pt-2 sm:pt-0 overflow-auto break-words">
+        <p className="text-muted-foreground pt-2 sm:pt-4 overflow-auto break-words">
           {explanation}
         </p>
-        <div className="flex mt-4 justify-center">
+        <div className="flex mt-4 justify-center sm:pb-4">
           <Link href={hrefGithub} target="_blank" rel="noopener noreferrer">
             <RxGithubLogo className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
