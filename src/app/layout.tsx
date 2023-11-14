@@ -20,9 +20,9 @@ const sintony = Sintony({
 });
 
 export const metadata: Metadata = {
-  title: 'Giovanni Vicentin - Professional Portfolio',
+  title: 'Giovanni Vicentin - Portifólio Profissional',
   description:
-    'Explore the professional portfolio of Giovanni Vicentin. Discover his expertise, projects, and professional journey in the industry.',
+    'Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria.',
   authors: [{ name: 'Giovanni Vicentin' }],
   metadataBase: new URL('https://giovannivicentn.com'),
 };
@@ -41,20 +41,20 @@ export default function RootLayout({
         <meta name="author" content="Giovanni Vicentin" />
         <meta
           name="description"
-          content="Explore the professional portfolio of Giovanni Vicentin. Discover his expertise, projects, and professional journey in the industry."
+          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria."
         />
         <meta
           name="keywords"
-          content="giovanni vicentin, portfolio, portifolio, giovanni vicentin portifolio, giovanni vicentn portfolio, Giovanni Vicentin"
+          content="giovanni vicentin, portfolio, portifolio, giovanni vicentin portifolio, giovanni vicentin portfolio, Giovanni Vicentin"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:title"
-          content="Giovanni Vicentin - Professional Portfolio"
+          content="Giovanni Vicentin - Portifólio Profissional"
         />
         <meta
           property="og:description"
-          content="Explore the professional portfolio of Giovanni Vicentin. Discover his expertise, projects, and professional journey in the industry."
+          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional na indústria."
         />
         <meta property="og:image" content="public\logo.png" />
         <meta property="og:url" content="https://www.giovannivicentin.com" />
@@ -63,7 +63,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Giovanni Vicentin's Portfolio" />
         <meta
           name="twitter:description"
-          content="Giovanni Vicentin - Professional Portfolio"
+          content="Giovanni Vicentin - Portifólio Profissional"
         />
         <meta name="twitter:image" content="public\logo.png" />
         <meta name="twitter:url" content="https://www.giovannivicentin.com" />
