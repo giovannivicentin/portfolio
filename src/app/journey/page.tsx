@@ -8,9 +8,10 @@ const JourneyPage = () => {
           <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
             Giovanni Vicentin
           </span>
-          , mas pode me chamar de Gi. Sou um Engenheiro de Software no Brasil,
-          atualmente trabalhando como Desenvolvedor Full Stack na Talst, uma
-          startup na área de tecnologia.
+          , mas pode me chamar de Gi. Sou um Engenheiro de Software no Brasil.
+          Com experiência em desenvolvimento Full Stack, me dedico a criar
+          soluções eficientes e inovadoras. Estou sempre buscando aprender e
+          colaborar em projetos. É um prazer estar aqui!
         </h2>
         <p className="mb-6 text-justify leading-relaxed">
           Desde a infância, sempre fui atraído por criar e resolver problemas.
@@ -28,23 +29,24 @@ const JourneyPage = () => {
           autodidata e aprofundou meu amor pela tecnologia.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          Comecei minha jornada com programação em 2020, aos 16 anos. No
-          entanto, minha luta contra a depressão foi um obstáculo, causando uma
-          pausa. Retomei os estudos em 2021 e desde então venho amando a
-          experiência. Isso me moldou em alguém resiliente, que sempre
-          persevera, nunca deixando de aprender e crescer na área de
-          programação.
+          Comecei minha jornada com programação em 2020, aos 16 anos. Enfrentei
+          alguns desafios no início, mas retomei os estudos com entusiasmo em
+          2021. Desde então, venho amando a experiência. Esses desafios me
+          moldaram em alguém resiliente, que sempre persevera, mantendo o foco
+          em aprender e crescer constantemente na área de programação.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          Iniciei minha carreira como engenheiro de software em 2022, me
-          especializando em desenvolvimento back-end com Python, MySQL e VBA.
+          Iniciei minha carreira como engenheiro de software em 2022,
+          especializando-me em desenvolvimento back-end com Python, MySQL e VBA.
           Durante esse período, trabalhei na criação de soluções de Automação de
           Processos Robóticos (RPA) e na otimização de processos para automação.
           Essa experiência solidificou meu entendimento sobre algoritmos,
           lógica, UML, bancos de dados e a dinâmica de uma equipe de tecnologia.
+        </p>
+        <p className="mb-6 text-justify leading-relaxed">
           Após seis meses, transitei para usar NodeJS em stack diária em
           desenvolvimento, integrando tecnologias como TypeScript, NestJS,
-          Prisma, Swagger... enquanto continuava com MySQL. Esse período foi
+          Prisma, Swagger, enquanto continuava com MySQL. Esse período foi
           transformador, aprimorei minhas habilidades em operações CRUD,
           desenvolvimento de APIs e arquitetura de projetos, e percebi a
           importância da documentação e o impacto das metodologias ágeis na
@@ -53,17 +55,17 @@ const JourneyPage = () => {
           enriqueceu minha perspectiva sobre o lado cliente das aplicações,
           design de interface e reforçou a ideia de que o desenvolvimento
           front-end é tão desafiador e gratificante quanto o back-end. É uma
-          jornada que eu realmente aprecio.
+          jornada que eu realmente me identifico.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
-          Atualmente, estou atuando como Desenvolvedor Full Stack na Talst, uma
-          startup inovadora, onde aplico meu vasto conhecimento em tecnologias
-          diversas. Essa posição me permite não apenas desenvolver soluções
-          técnicas integradas, mas também me envolver em todos os aspectos do
-          ciclo de vida do desenvolvimento de software. Aqui, tenho a
-          oportunidade de liderar projetos, mentorar colegas mais novos e
-          colaborar com equipes interdisciplinares para entregar produtos que
-          realmente fazem a diferença na vida das pessoas.
+          Atualmente, estou atuando como Desenvolvedor Full Stack, onde aplico
+          meu vasto conhecimento em tecnologias diversas. Essa posição me
+          permite não apenas desenvolver soluções técnicas integradas, mas
+          também me envolver em todos os aspectos do ciclo de vida do
+          desenvolvimento de software. Neste papel, tenho a oportunidade de
+          liderar projetos, mentorar colegas e colaborar com equipes
+          interdisciplinares para entregar produtos que realmente fazem a
+          diferença na vida das pessoas.
         </p>
         <p className="mb-6 text-justify leading-relaxed">
           Olhando para o futuro, estou entusiasmado com as possibilidades
