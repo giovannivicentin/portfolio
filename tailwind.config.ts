@@ -21,6 +21,7 @@ module.exports = {
       },
     },
     extend: {
+      scrollbar: ['rounded', 'dark'],
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -103,5 +104,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), tailwindcssAnimate],
+  plugins: [
+    require('tailwindcss-animate'),
+    require('tailwind-scrollbar'),
+    tailwindcssAnimate,
+  ],
 };

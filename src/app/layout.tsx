@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className={`flex min-h-screen flex-col items-center justify-between bg-background text-foreground md:px-24 ${poppins.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between bg-background text-foreground md:px-24 overflow-x-hidden ${poppins.className}`}
     >
       <Head>
         <meta name="author" content="Giovanni Vicentin" />
@@ -68,7 +68,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="public\logo.png" />
         <meta name="twitter:url" content="https://www.giovannivicentin.com" />
       </Head>
-      <body className="flex flex-col flex-1 w-full items-center">
+      <body className="flex flex-col flex-1 w-full items-center scrollbar-thin scrollbar-thumb-muted-foreground/40 scrollbar-track-background">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
