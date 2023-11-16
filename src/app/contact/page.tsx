@@ -1,14 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Label } from '@/components/ui/label';
 import { Input } from '../../components/ui/input';
-import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
+import {
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+  ExclamationTriangleIcon,
+  RocketIcon,
+  CheckIcon,
+} from '@radix-ui/react-icons';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { TbMailFilled } from 'react-icons/tb';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
 
 const ContactPage = () => {
   const [charCount, setCharCount] = useState(0);
@@ -18,6 +25,8 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+  const [showFailureAlert, setShowFailureAlert] = useState(false);
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setEmail(e.target.value);
@@ -35,35 +44,59 @@ const ContactPage = () => {
     }
   };
 
+  const handleSubmit = async (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      body: JSON.stringify({ email, subject, message }),
+    });
+    const data = await response.json();
+
+    if (data.success) {
+      setShowSuccessAlert(true);
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    } else {
+      setShowFailureAlert(true);
+    }
+  };
+
+  useEffect(() => {
+    if (showSuccessAlert || showFailureAlert) {
+      const timer = setTimeout(() => {
+        setShowSuccessAlert(false);
+        setShowFailureAlert(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccessAlert, showFailureAlert]);
+
   return (
     <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+      <div className="fixed bottom-1/4 sm:bottom-0 sm:right-0 m-6 space-y-4 animate-fadeIn">
+        {showSuccessAlert && (
+          <Alert>
+            <CheckIcon className="h-4 w-4" />
+            <AlertTitle>Enviado</AlertTitle>
+            <AlertDescription>E-mail enviado com sucesso!</AlertDescription>
+          </Alert>
+        )}
+        {showFailureAlert && (
+          <Alert variant="destructive">
+            <ExclamationTriangleIcon className="h-4 w-4" />
+            <AlertTitle>Erro</AlertTitle>
+            <AlertDescription>
+              Falha no envio do e-mail. Tente mais tarde.
+            </AlertDescription>
+          </Alert>
+        )}
+      </div>
       <div className="max-w-4xl w-full py-6">
         <h1 className="text-3xl mb-6 text-center">Contato</h1>
-        <form
-          onSubmit={async (event) => {
-            event.preventDefault();
-
-            const response = await fetch('/api/send', {
-              method: 'POST',
-              body: JSON.stringify({ email, subject, message }),
-            });
-            const data = await response.json();
-            console.log(data);
-
-            if (data.success) {
-              window.alert('E-mail enviado com sucesso!');
-              setEmail('');
-              setSubject('');
-              setMessage('');
-              setCharCount(0);
-              setHasReachedLimit(false);
-            } else {
-              window.alert(
-                'Erro ao enviar o e-mail. Tente novamente mais tarde.',
-              );
-            }
-          }}
-        >
+        <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center space-y-2">
             <div className="flex flex-col items-start w-full max-w-md">
               <Label className="mb-1" htmlFor="email">
