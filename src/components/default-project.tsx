@@ -25,7 +25,7 @@ const DefaultProject: React.FC<Props> = ({
         reverse ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row'
       }`}
     >
-      <div className="w-1/2">
+      <div className="w-full sm:w-1/2">
         <Link href={hrefLive} target="_blank" rel="noopener noreferrer">
           <Image
             src={photo}
@@ -37,8 +37,8 @@ const DefaultProject: React.FC<Props> = ({
           />
         </Link>
       </div>
-      <div className="w-1/2 flex flex-col justify-between">
-        <p className="text-muted-foreground pt-2 sm:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
+      <div className="w-full sm:w-1/2 flex flex-col justify-between">
+        <p className="text-muted-foreground pt-3 sm:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
           {explanation}
         </p>
         <div className="flex mt-4 justify-center sm:pb-0">

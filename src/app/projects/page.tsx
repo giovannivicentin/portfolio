@@ -1,4 +1,5 @@
 import DefaultProject from '@/components/default-project';
+import { Separator } from '@/components/ui/separator';
 
 const ProjectsPage = () => {
   return (
@@ -14,6 +15,7 @@ const ProjectsPage = () => {
             hrefLive="https://www.giovannivicentin.com/"
           />
         </div>
+        <Separator className="mt-10" />
       </div>
       <h2 className="max-w-4xl w-full py-6 text-muted-foreground text-justify leading-relaxed">
         Como meu foco sempre foi em projetos para empresas privadas,
