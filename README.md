@@ -1,60 +1,36 @@
-# Portfolio
-
-## Overview
-
-Welcome to my personal portfolio project, crafted using the latest web technologies including Next.js with React, Tailwind CSS, ShadCUI for component styling, and Resend with Resend API for email functionalities. This project serves as a comprehensive showcase of my professional journey, personal projects, and a way to contact me.
-
-## Live Demo
-
-![Portfolio Preview](public/portfolio-project.png)
-
-_This image gives a glimpse into the user interface of my portfolio. For a full experience, please visit the live site when it becomes available._
-
-## Features
-
-- **Main Page:** An engaging introduction to who I am, with a sleek, modern design.
-- **Journey Page (`/journey`):** A detailed timeline or narrative of my professional journey.
-- **Projects Page (`/projects`):** A gallery of my personal projects, demonstrating my skills and interests.
-- **Contact Page (`/contact`):** A user-friendly form to get in touch with me, powered by Resend API.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps:
+First, run the development server:
 
-1. Clone the repository:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-   ```bash
-   git clone https://github.com/giovannivicentin/portfolio
-   ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2. Install NPM packages:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-   ```bash
-   npm install
-   # or
-   pnpm install
-   # I used pnpm
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-3. Run the development server:
+## Learn More
 
-   ```bash
-   npm run dev
-   # or
-   pnpm dev
-   # or
-   yarn dev
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Technologies Used
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- **Next.js & React:** For robust front-end development and server-side rendering.
-- **Tailwind CSS:** For styling with a utility-first CSS framework.
-- **ShadCUI:** A library for beautiful, responsive components.
-- **Resend with Resend API:** To handle email sending functionalities seamlessly.
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
