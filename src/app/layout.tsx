@@ -5,6 +5,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import Head from 'next/head';
 
 const poppins = Poppins({
@@ -91,6 +93,7 @@ export default function RootLayout({
           <Footer />
         </footer>
       </body>
+      <SpeedInsights />
     </html>
   );
 }
