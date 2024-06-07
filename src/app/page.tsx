@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Button } from '@/components/ui/button';
 import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
 import TechStack from '@/components/tech-stack';
@@ -70,7 +70,10 @@ export default function Home() {
           alt="Profile Image"
           className="rounded-full mx-auto mb-10 sm:mx-0 sm:mb-0 border-collapse border-2 border-primary/50 animate-fadeIn"
           priority
-        ></Image>
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }}></Image>
       </div>
     </div>
   );
