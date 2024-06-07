@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Separator } from './ui/separator';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 const techDescriptions = {
   html: 'HTML é a linguagem padrão de marcação para criação de páginas web.',

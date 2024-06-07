@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { RxExternalLink, RxGithubLogo } from 'react-icons/rx';
 import Link from 'next/link';
 
