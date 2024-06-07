@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import { RxExternalLink, RxGithubLogo } from 'react-icons/rx';
 import Link from 'next/link';
 
@@ -30,11 +30,14 @@ const DefaultProject: React.FC<Props> = ({
           <Image
             src={photo}
             alt={photoAlt}
-            layout="responsive"
             width={500}
             height={500}
             className="border-collapse border-2 rounded-md border-primary/50 hover:dark:border-violet-400 hover:border-violet-700 transition-colors"
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </Link>
       </div>
       <div className="w-full sm:w-1/2 flex flex-col justify-between">
