@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className="w-full flex flex-wrap items-center justify-center border-b border-muted-foreground/40 p-1 sm:gap-x-1 md:gap-x-2">
+    <nav className="text-sm mt-6 w-full flex flex-wrap items-center justify-center border-b border-muted-foreground/40 p-1 sm:gap-x-1 md:gap-x-2">
       <Link href="/">
         <Button
           variant="ghost"

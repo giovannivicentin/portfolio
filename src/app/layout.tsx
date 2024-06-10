@@ -33,34 +33,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-br"
-      className={`flex min-h-screen flex-col items-center justify-between bg-background text-foreground md:px-24 overflow-x-hidden ${poppins.className}`}
-    >
-      <body className="flex flex-col flex-1 w-full items-center scrollbar-thin scrollbar-thumb-muted-foreground/40 scrollbar-track-background">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <header
-            className={`w-full max-w-full sm:max-w-4xl text-sm mt-6 ${sintony.className}`}
-          >
-            <Navbar />
-          </header>
-          <main className="flex-1 w-full max-w-full px-4 md:px-0">
-            {children}
-          </main>
-        </ThemeProvider>
-        <Analytics />
-        <footer
-          className={`w-full max-w-full sm:max-w-4xl mb-6 ${sintony.className}`}
-        >
-          <Footer />
-        </footer>
+    <html lang="pt-br">
+    <body className={`flex flex-col min-h-screen w-full items-center justify-between bg-background text-foreground scrollbar-thin scrollbar-thumb-muted-foreground/40 scrollbar-track-background md:px-24 overflow-x-hidden ${poppins.className}`}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <header className={`w-full max-w-4xl ${sintony.className}`}>
+        <Navbar />
+        </header>
+        <main className="w-full max-w-full px-4 md:px-0">
+          {children}
+        </main>
+      <footer className={`w-full max-w-4xl ${sintony.className}`}>
+        <Footer />
+      </footer>
+      <Analytics />
       <SpeedInsights />
-      </body>
-    </html>
+      </ThemeProvider>
+    </body>
+  </html>
+  
   );
 }
