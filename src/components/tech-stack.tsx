@@ -46,8 +46,9 @@ const TechButton: FC<TechButtonProps> = ({ tech, onClick }) => (
       alt={`${tech} icon`}
       className="dark:invert bg-transparent"
       style={{
-        maxWidth: '100%',
+        width: 'auto',
         height: 'auto',
+        maxWidth: '100%',
       }}
     />
   </button>
