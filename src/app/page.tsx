@@ -51,14 +51,14 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+              <LinkedInLogoIcon className="w-8 h-8 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
             <Link
               href="https://github.com/giovannivicentin"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+              <GitHubLogoIcon className="w-8 h-8 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
           <TechStack />
