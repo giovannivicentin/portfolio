@@ -16,9 +16,9 @@ const ProjectsPage = () => {
             reverse
           />
           <DefaultProject
-            photo="/portfolio-project.jpeg"
+            photo="/portfolio-project.png"
             photoAlt="portfolio project"
-            explanation="Este portfólio destaca uma coleção de projetos que refletem minhas habilidades e paixões, desenvolvido com Next.js, TailwindCSS e TypeScript. Ele demonstra minha competência técnica e a capacidade de criar uma experiência de usuário fluida. Durante o desenvolvimento, superei desafios de otimização de desempenho e responsividade do design, ampliando meu conhecimento sobre as melhores práticas de desenvolvimento web. Implementado no Vercel, este portfólio mostra meu trabalho e evidencia minhas habilidades em deploy e manutenção de aplicações web modernas, representando meu crescimento profissional e dedicação ao aprimoramento técnico e criativo."
+            explanation="Desenvolvi meu portfólio pessoal com o objetivo de construir uma marca pessoal, facilitar o networking e comprovar minha experiência como desenvolvedor de software. Utilizando tecnologias como Next.js, React, Tailwind CSS, Resend API e Node.js, criei um site simples e acessível, focado em adicionar e apresentar meus projetos de forma organizada. Através dele, espero que as pessoas possam me conhecer melhor profissionalmente, compreender minha trajetória e habilidades, e encontrar uma forma fácil de entrar em contato comigo para futuras oportunidades e colaborações."
             hrefGithub="https://github.com/giovannivicentin/portfolio"
             hrefLive="https://www.giovannivicentin.com/"
           />
