@@ -3,7 +3,7 @@ import { Separator } from '@/components/ui/separator';
 
 const ProjectsPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col items-center justify-center p-4 md:px-24">
       <div className="max-w-4xl w-full py-6">
         <h1 className="text-3xl mb-7 text-center">Projetos</h1>
         <div className="flex flex-col items-center justify-center max-w-4xl gap-7">

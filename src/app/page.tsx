@@ -6,7 +6,7 @@ import TechStack from '@/components/tech-stack';
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center mt-10 sm:mt-20 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col justify-center items-center mt-10 sm:mt-20">
       <div className="flex flex-col-reverse sm:flex-row items-start">
         <div className="flex flex-col mr-2">
           <div className="sm:items-center sm:text-center max-w-4xl w-full">

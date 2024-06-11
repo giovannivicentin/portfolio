@@ -75,7 +75,7 @@ const ContactPage = () => {
   }, [showSuccessAlert, showFailureAlert]);
 
   return (
-    <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col items-center p-4 md:px-24">
       <div className="fixed bottom-1/4 sm:bottom-0 sm:right-0 m-6 space-y-4 animate-fadeIn">
         {showSuccessAlert && (
           <Alert>
