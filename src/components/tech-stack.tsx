@@ -71,7 +71,7 @@ const TechStack: FC = () => {
   );
 
   return (
-    <div className="mt-5 flex flex-col">
+    <div className="mt-5 flex flex-col animate-fade-right delay-1000">
       <p className="text-lg text-muted-foreground">Tech Stack:</p>
       <div className="flex flex-col mt-5 space-y-2">
         {renderTechRow(techIcons.slice(0, 7))}
