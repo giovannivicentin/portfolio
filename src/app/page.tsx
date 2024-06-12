@@ -9,18 +9,19 @@ export default function Home() {
     <div className="flex flex-col justify-center items-center mt-10 sm:mt-20">
       <div className="flex flex-col-reverse sm:flex-row items-start">
         <div className="flex flex-col mr-2">
-          <div className="sm:items-center sm:text-center max-w-4xl w-full">
+          <div className="sm:items-center text-center max-w-4xl w-full">
             <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl sm:text-justify leading-relaxed">
               Bem-vindo ao meu portfólio!
             </h1>
-            <h2 className="text-xl sm:text-2xl mt-7 sm:mt-4 max-w-xl sm:text-justify leading-relaxed">
-              Fico feliz com a sua visita. Meu nome é<br />
+            <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed">
+              Fico feliz com a sua visita. Meu nome é
+              <br />
               <span className="dark:text-violet-400 text-violet-700 animate-fadeIn">
                 Giovanni Vicentin
               </span>
               .
             </h2>
-            <p className="text-lg text-muted-foreground mt-7 sm:mt-4 max-w-xl text-justify leading-relaxed">
+            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-justify leading-relaxed">
               Além da programação, dedico-me ao karatê shotokan, que equilibra
               mente e corpo. A música, especialmente o rap brasileiro, energiza
               e inspira meu dia a dia. Sou também apaixonado por leitura, sempre
@@ -28,7 +29,7 @@ export default function Home() {
               livros.
             </p>
           </div>
-          <div className="mt-7 sm:mt-4 flex flex-col md:flex-row">
+          <div className="mt-4 flex flex-col md:flex-row">
             <Link href="/journey" prefetch>
               <Button className="text-md md:text-lg w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Saiba Mais Sobre Mim
