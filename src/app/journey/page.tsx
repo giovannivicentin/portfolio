@@ -5,7 +5,7 @@ const JourneyPage = () => {
         <h1 className="text-3xl mb-6 animate-fade">Minha Jornada</h1>
         <h2 className="text-xl mb-6 text-justify leading-relaxed animate-fade-right">
           Olá! Eu sou{' '}
-          <span className="dark:text-violet-400 text-violet-700">
+          <span className="dark:text-violet-400 text-violet-700 animate-fade delay-100">
             Giovanni Vicentin
           </span>
           , mas pode me chamar de Gibas. Sou Engenheiro de Software no Brasil,

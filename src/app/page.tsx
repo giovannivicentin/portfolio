@@ -13,15 +13,15 @@ export default function Home() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl sm:text-justify leading-relaxed animate-fade-right">
               Bem-vindo ao meu portfólio!
             </h1>
-            <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed animate-fade-right delay-200">
+            <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed animate-fade-right delay-100">
               Fico feliz com a sua visita. Meu nome é
               <br />
-              <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-300">
+              <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-200">
                 Giovanni Vicentin
               </span>
               .
             </h2>
-            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-justify leading-relaxed animate-fade-right delay-500">
+            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-justify leading-relaxed animate-fade-right delay-300">
               Além da programação, dedico-me ao karatê shotokan, que equilibra
               mente e corpo. A música, especialmente o rap brasileiro, energiza
               e inspira meu dia a dia. Sou também apaixonado por leitura, sempre
@@ -29,7 +29,7 @@ export default function Home() {
               livros.
             </p>
           </div>
-          <div className="mt-4 flex flex-col md:flex-row animate-fade-right delay-700">
+          <div className="mt-4 flex flex-col md:flex-row animate-fade-right delay-400">
             <Link href="/journey" prefetch>
               <Button className="text-md md:text-lg w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Saiba Mais Sobre Mim
@@ -45,8 +45,8 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-1000">Me encontre em:</p>
-          <div className="flex mt-5 animate-fade-right delay-1000">
+          <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-500">Me encontre em:</p>
+          <div className="flex mt-5 animate-fade-right delay-600">
             <Link
               href="https://www.linkedin.com/in/giovannivicentin/"
               target="_blank"
