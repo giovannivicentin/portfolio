@@ -48,18 +48,3 @@
     --ring: 240 4.9% 83.9%;
   }
 }
-
-@keyframes fadeInSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fadeInSlideUp {
-  animation: fadeInSlideUp 1s forwards;
-}

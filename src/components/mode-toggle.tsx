@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Moon, Sun } from 'lucide-react';
+import { Moon, Sun, Loader } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 import { Toggle } from '@/components/ui/toggle';
@@ -24,7 +24,7 @@ export function ModeToggle() {
 
   const displayIcon = () => {
     if (!mounted) {
-      return null;
+      return <Loader className="animate-spin h-3.5 w-3.5 sm:w-5 sm:h-5 xl:h-6 xl:w-6" />;
     }
 
     if (theme === 'system') {

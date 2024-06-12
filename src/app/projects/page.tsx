@@ -3,25 +3,29 @@ import { Separator } from '@/components/ui/separator';
 
 const ProjectsPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
+    <div className="flex flex-col items-center justify-center p-4 md:px-24">
       <div className="max-w-4xl w-full py-6">
-        <h1 className="text-3xl mb-7 text-center">Projetos</h1>
+        <h1 className="text-3xl mb-7 text-center animate-fade">Projetos</h1>
         <div className="flex flex-col items-center justify-center max-w-4xl gap-7">
+          <div className='animate-fade-right delay-100'>
           <DefaultProject
             photo='/fk-project.jpeg' 
             photoAlt='Frank Metalicas Website project'
             explanation='Desenvolvi um site para a Frank Metálicas com o objetivo de criar uma presença digital robusta, facilitando a apresentação de produtos e serviços, exibição de projetos realizados e contato com clientes. Utilizando tecnologias como Next.js, React, Tailwind CSS, Shadcn/UI, Node.js, Zod e React Hook Form, otimizei o site para motores de busca, aumentando a visibilidade da empresa no Google. Como resultado, houve um aumento significativo nos contatos recebidos e destaque da empresa nas buscas online.'
             hrefGithub='https://github.com/giovannivicentin/fk_metalicas'
             hrefLive='https://www.frankmetalicas.com/'
-            reverse
           />
+          </div>
+          <div className='animate-fade-left delay-200'>
           <DefaultProject
-            photo="/portfolio-project.jpeg"
+            photo="/portfolio-project.png"
             photoAlt="portfolio project"
-            explanation="Este portfólio destaca uma coleção de projetos que refletem minhas habilidades e paixões, desenvolvido com Next.js, TailwindCSS e TypeScript. Ele demonstra minha competência técnica e a capacidade de criar uma experiência de usuário fluida. Durante o desenvolvimento, superei desafios de otimização de desempenho e responsividade do design, ampliando meu conhecimento sobre as melhores práticas de desenvolvimento web. Implementado no Vercel, este portfólio mostra meu trabalho e evidencia minhas habilidades em deploy e manutenção de aplicações web modernas, representando meu crescimento profissional e dedicação ao aprimoramento técnico e criativo."
+            explanation="Desenvolvi meu portfólio pessoal com o objetivo de construir uma marca pessoal, facilitar o networking e comprovar minha experiência como desenvolvedor de software. Utilizando tecnologias como Next.js, React, Tailwind CSS, Resend API e Node.js, criei um site simples e acessível, focado em adicionar e apresentar meus projetos de forma organizada. Através dele, espero que as pessoas possam me conhecer melhor profissionalmente, compreender minha trajetória e habilidades, e encontrar uma forma fácil de entrar em contato comigo para futuras oportunidades e colaborações."
             hrefGithub="https://github.com/giovannivicentin/portfolio"
             hrefLive="https://www.giovannivicentin.com/"
+            reverse
           />
+          </div>
         </div>
         <Separator className="mt-10" />
       </div>

@@ -75,8 +75,8 @@ const ContactPage = () => {
   }, [showSuccessAlert, showFailureAlert]);
 
   return (
-    <div className="flex flex-col items-center p-4 md:px-24 opacity-0 transform translate-y-10 animate-fadeInSlideUp">
-      <div className="fixed bottom-1/4 sm:bottom-0 sm:right-0 m-6 space-y-4 animate-fadeIn">
+    <div className="flex flex-col items-center p-4 md:px-24">
+      <div className="fixed bottom-1/4 sm:bottom-0 sm:right-0 m-6 space-y-4">
         {showSuccessAlert && (
           <Alert>
             <CheckIcon className="h-4 w-4" />
@@ -95,10 +95,10 @@ const ContactPage = () => {
         )}
       </div>
       <div className="max-w-4xl w-full py-6">
-        <h1 className="text-3xl mb-6 text-center">Contato</h1>
+        <h1 className="text-3xl mb-6 text-center animate-fade">Contato</h1>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col items-center space-y-2">
-            <div className="flex flex-col items-start w-full max-w-md">
+            <div className="flex flex-col items-start w-full max-w-md animate-fade-right delay-100">
               <Label className="mb-1" htmlFor="email">
                 E-mail
               </Label>
@@ -112,7 +112,7 @@ const ContactPage = () => {
                 required
               />
             </div>
-            <div className="flex flex-col items-start w-full max-w-md">
+            <div className="flex flex-col items-start w-full max-w-md animate-fade-right delay-200">
               <Label className="mb-1" htmlFor="subject">
                 Assunto
               </Label>
@@ -125,7 +125,7 @@ const ContactPage = () => {
                 placeholder="Escreva o assunto aqui."
               />
             </div>
-            <div className="flex flex-col items-start w-full max-w-md">
+            <div className="flex flex-col items-start w-full max-w-md animate-fade-right delay-300">
               <Label className="mb-1" htmlFor="message">
                 Mensagem
               </Label>
@@ -148,7 +148,7 @@ const ContactPage = () => {
                 {charCount} / 200
               </span>
             </div>
-            <div className="flex flex-col items-start w-full max-w-md">
+            <div className="flex flex-col items-start w-full max-w-md animate-fade-right delay-500">
               <Button
                 type="submit"
                 className="w-full mt-2 font-bold transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700"
@@ -161,6 +161,7 @@ const ContactPage = () => {
                 href="https://github.com/giovannivicentin"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='animate-fade-up delay-500'
               >
                 <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -168,6 +169,8 @@ const ContactPage = () => {
                 href="https://www.linkedin.com/in/giovannivicentin/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='animate-fade-up delay-600'
+
               >
                 <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -175,6 +178,8 @@ const ContactPage = () => {
                 href="https://wa.me//5511942010707?text=Olá%20Giovanni"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='animate-fade-up delay-700'
+
               >
                 <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -182,6 +187,7 @@ const ContactPage = () => {
                 href="mailto:giovannifvicentin@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className='animate-fade-up delay-800'
               >
                 <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>

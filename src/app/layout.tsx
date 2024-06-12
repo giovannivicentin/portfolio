@@ -7,8 +7,6 @@ import Footer from '@/components/footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import Head from 'next/head';
-
 const poppins = Poppins({
   weight: '300',
   subsets: ['latin'],
@@ -35,65 +33,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="pt-br"
-      className={`flex min-h-screen flex-col items-center justify-between bg-background text-foreground md:px-24 overflow-x-hidden ${poppins.className}`}
-    >
-      <Head>
-        <meta name="author" content="Giovanni Vicentin" />
-        <meta
-          name="description"
-          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional."
-        />
-        <meta
-          name="keywords"
-          content="giovanni vicentin, portfolio, portifolio, giovanni vicentin portifolio, giovanni vicentin portfolio, Giovanni Vicentin"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          property="og:title"
-          content="Giovanni Vicentin - Portifólio Profissional"
-        />
-        <meta
-          property="og:description"
-          content="Explore o portfólio profissional de Giovanni Vicentin. Descubra sua expertise, projetos e trajetória profissional."
-        />
-        <meta property="og:image" content="public\logo.png" />
-        <meta property="og:url" content="https://www.giovannivicentin.com" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Giovanni Vicentin's Portfolio" />
-        <meta
-          name="twitter:description"
-          content="Giovanni Vicentin - Portifólio Profissional"
-        />
-        <meta name="twitter:image" content="public\logo.png" />
-        <meta name="twitter:url" content="https://www.giovannivicentin.com" />
-      </Head>
-      <body className="flex flex-col flex-1 w-full items-center scrollbar-thin scrollbar-thumb-muted-foreground/40 scrollbar-track-background">
+    <html lang="pt-br">
+      <body className={`flex flex-col min-h-screen w-full items-center justify-between bg-background text-foreground ${poppins.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <header
-            className={`w-full max-w-full sm:max-w-4xl text-sm mt-6 ${sintony.className}`}
-          >
+          <header className={`w-full max-w-4xl ${sintony.className}`}>
             <Navbar />
           </header>
-          <main className="flex-1 w-full max-w-full px-4 md:px-0">
+          <main className="w-full max-w-full px-4 md:px-0">
             {children}
           </main>
+          <footer className={`w-full max-w-4xl ${sintony.className}`}>
+            <Footer />
+          </footer>
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
-        <Analytics />
-        <footer
-          className={`w-full max-w-full sm:max-w-4xl mb-6 ${sintony.className}`}
-        >
-          <Footer />
-        </footer>
       </body>
-      <SpeedInsights />
     </html>
   );
 }
