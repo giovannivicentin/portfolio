@@ -69,7 +69,7 @@ export default function Home() {
           width={150}
           height={150}
           alt="Profile Image"
-          className="rounded-full mx-auto mb-10 sm:mx-0 sm:mb-0 border-collapse border-2 border-primary/50 animate-fadeIn"
+          className="rounded-full mx-auto mb-4 sm:mx-0 sm:mb-0 border-collapse border-2 border-primary/50 animate-fadeIn"
           priority
           style={{
             maxWidth: "100%",
