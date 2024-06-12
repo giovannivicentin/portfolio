@@ -5,8 +5,9 @@ const ProjectsPage = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 md:px-24">
       <div className="max-w-4xl w-full py-6">
-        <h1 className="text-3xl mb-7 text-center">Projetos</h1>
+        <h1 className="text-3xl mb-7 text-center animate-fade">Projetos</h1>
         <div className="flex flex-col items-center justify-center max-w-4xl gap-7">
+          <div className='animate-fade-right delay-100'>
           <DefaultProject
             photo='/fk-project.jpeg' 
             photoAlt='Frank Metalicas Website project'
@@ -14,6 +15,8 @@ const ProjectsPage = () => {
             hrefGithub='https://github.com/giovannivicentin/fk_metalicas'
             hrefLive='https://www.frankmetalicas.com/'
           />
+          </div>
+          <div className='animate-fade-left delay-200'>
           <DefaultProject
             photo="/portfolio-project.png"
             photoAlt="portfolio project"
@@ -22,6 +25,7 @@ const ProjectsPage = () => {
             hrefLive="https://www.giovannivicentin.com/"
             reverse
           />
+          </div>
         </div>
         <Separator className="mt-10" />
       </div>

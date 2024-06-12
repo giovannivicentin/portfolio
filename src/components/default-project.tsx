@@ -22,7 +22,7 @@ const DefaultProject: React.FC<Props> = ({
   return (
     <div
       className={`flex flex-col sm:flex-row gap-x-6 xl:gap-x-12 items-center sm:items-stretch ${
-        reverse ? 'flex-col sm:flex-row-reverse animate-fade-left' : 'flex-col sm:flex-row animate-fade-right'
+        reverse ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row'
       }`}
     >
       <div className="w-full sm:w-1/2">
