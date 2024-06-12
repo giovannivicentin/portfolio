@@ -34,27 +34,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-    <body className={`flex flex-col min-h-screen w-full items-center justify-between bg-background text-foreground scrollbar-thin scrollbar-thumb-muted-foreground/40 scrollbar-track-background md:px-24 overflow-x-hidden ${poppins.className}`}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <header className={`w-full max-w-4xl ${sintony.className}`}>
-        <Navbar />
-        </header>
-        <main className="w-full max-w-full px-4 md:px-0">
-          {children}
-        </main>
-      <footer className={`w-full max-w-4xl ${sintony.className}`}>
-        <Footer />
-      </footer>
-      <Analytics />
-      <SpeedInsights />
-      </ThemeProvider>
-    </body>
-  </html>
-  
+      <body className={`flex flex-col min-h-screen w-full items-center justify-between bg-background text-foreground ${poppins.className}`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header className={`w-full max-w-4xl ${sintony.className}`}>
+            <Navbar />
+          </header>
+          <main className="w-full max-w-full px-4 md:px-0">
+            {children}
+          </main>
+          <footer className={`w-full max-w-4xl ${sintony.className}`}>
+            <Footer />
+          </footer>
+          <Analytics />
+          <SpeedInsights />
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
