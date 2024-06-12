@@ -13,7 +13,6 @@ const ProjectsPage = () => {
             explanation='Desenvolvi um site para a Frank Metálicas com o objetivo de criar uma presença digital robusta, facilitando a apresentação de produtos e serviços, exibição de projetos realizados e contato com clientes. Utilizando tecnologias como Next.js, React, Tailwind CSS, Shadcn/UI, Node.js, Zod e React Hook Form, otimizei o site para motores de busca, aumentando a visibilidade da empresa no Google. Como resultado, houve um aumento significativo nos contatos recebidos e destaque da empresa nas buscas online.'
             hrefGithub='https://github.com/giovannivicentin/fk_metalicas'
             hrefLive='https://www.frankmetalicas.com/'
-            reverse
           />
           <DefaultProject
             photo="/portfolio-project.png"
@@ -21,6 +20,7 @@ const ProjectsPage = () => {
             explanation="Desenvolvi meu portfólio pessoal com o objetivo de construir uma marca pessoal, facilitar o networking e comprovar minha experiência como desenvolvedor de software. Utilizando tecnologias como Next.js, React, Tailwind CSS, Resend API e Node.js, criei um site simples e acessível, focado em adicionar e apresentar meus projetos de forma organizada. Através dele, espero que as pessoas possam me conhecer melhor profissionalmente, compreender minha trajetória e habilidades, e encontrar uma forma fácil de entrar em contato comigo para futuras oportunidades e colaborações."
             hrefGithub="https://github.com/giovannivicentin/portfolio"
             hrefLive="https://www.giovannivicentin.com/"
+            reverse
           />
         </div>
         <Separator className="mt-10" />
