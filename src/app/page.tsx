@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Image from "next/image";
-import { Button } from '@/components/ui/button';
-import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons';
-import TechStack from '@/components/tech-stack';
+import Link from 'next/link'
+import Image from 'next/image'
+import { Button } from '@/components/ui/button'
+import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
+import TechStack from '@/components/tech-stack'
 
 export default function Home() {
   return (
@@ -13,14 +13,15 @@ export default function Home() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl sm:text-justify leading-relaxed animate-fade-right">
               Bem-vindo ao meu portfólio!
             </h1>
-            <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed animate-fade-right delay-100">
-              Fico feliz com a sua visita. Meu nome é
-              <br />
-              <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-200">
-                Giovanni Vicentin
-              </span>
-              .
-            </h2>
+            <div>
+              <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed animate-fade-right delay-100 md:w-[30rem]">
+                Fico feliz com a sua visita. Meu nome é
+                <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-200">
+                  {` Giovanni Vicentin`}
+                </span>
+                .
+              </h2>
+            </div>
             <p className="text-lg text-muted-foreground mt-4 max-w-xl text-justify leading-relaxed animate-fade-right delay-300">
               Além da programação, dedico-me ao karatê shotokan, que equilibra
               mente e corpo. A música, especialmente o rap brasileiro, energiza
@@ -45,7 +46,9 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-500">Me encontre em:</p>
+          <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-500">
+            Me encontre em:
+          </p>
           <div className="flex mt-5 animate-fade-right delay-600">
             <Link
               href="https://www.linkedin.com/in/giovannivicentin/"
@@ -72,10 +75,11 @@ export default function Home() {
           className="rounded-full mx-auto mb-4 sm:mx-0 sm:mb-0 border-collapse border-2 border-primary/50 animate-fade-left"
           priority
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }}></Image>
+            maxWidth: '100%',
+            height: 'auto',
+          }}
+        ></Image>
       </div>
     </div>
-  );
+  )
 }

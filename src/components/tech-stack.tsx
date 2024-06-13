@@ -1,14 +1,14 @@
-'use client';
-import React from 'react';
-import { useState, FC } from 'react';
-import { Separator } from './ui/separator';
-import Image from 'next/image';
+'use client'
+import React, { useState, FC } from 'react'
+import { Separator } from './ui/separator'
+import Image from 'next/image'
 
 const techDescriptions: Record<string, string> = {
   html: 'HTML é a linguagem padrão de marcação para criação de páginas web.',
   js: 'JavaScript é uma linguagem de programação que permite páginas web interativas.',
   tailwind: 'Tailwind CSS é um framework CSS baseado em utilidades.',
-  react: 'React é uma biblioteca JavaScript para construção de interfaces de usuário.',
+  react:
+    'React é uma biblioteca JavaScript para construção de interfaces de usuário.',
   node: 'Node.js é um ambiente de execução JavaScript baseado no motor Chrome V8.',
   sql: 'SQL é uma linguagem específica para gerenciamento e consulta de bancos de dados.',
   git: 'Git é um sistema de controle de versão distribuído.',
@@ -17,19 +17,31 @@ const techDescriptions: Record<string, string> = {
   sass: 'Sass é uma linguagem de script pré-processador que compila em CSS.',
   next: 'Next.js é um framework React para aplicações renderizadas no lado do servidor.',
   nest: 'Nest.js: Framework Node.js eficiente e escalável para o lado do servidor.',
-  mysql: 'MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto.',
+  mysql:
+    'MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto.',
   python: 'Python é uma linguagem de programação de alto nível muito popular.',
-};
+}
 
 const techIcons: Array<keyof typeof techDescriptions> = [
-  'html', 'js', 'tailwind', 'react', 'node', 
-  'sql', 'git', 'css', 'ts', 'sass', 
-  'next', 'nest', 'mysql', 'python'
-];
+  'html',
+  'js',
+  'tailwind',
+  'react',
+  'node',
+  'sql',
+  'git',
+  'css',
+  'ts',
+  'sass',
+  'next',
+  'nest',
+  'mysql',
+  'python',
+]
 
 interface TechButtonProps {
-  tech: keyof typeof techDescriptions;
-  onClick: () => void;
+  tech: keyof typeof techDescriptions
+  onClick: () => void
 }
 
 const TechButton: FC<TechButtonProps> = ({ tech, onClick }) => (
@@ -52,10 +64,12 @@ const TechButton: FC<TechButtonProps> = ({ tech, onClick }) => (
       }}
     />
   </button>
-);
+)
 
 const TechStack: FC = () => {
-  const [selectedTech, setSelectedTech] = useState<keyof typeof techDescriptions | null>(null);
+  const [selectedTech, setSelectedTech] = useState<
+    keyof typeof techDescriptions | null
+  >(null)
 
   const renderTechRow = (techs: Array<keyof typeof techDescriptions>) => (
     <div className="flex">
@@ -68,7 +82,7 @@ const TechStack: FC = () => {
         </React.Fragment>
       ))}
     </div>
-  );
+  )
 
   return (
     <div className="mt-5 flex flex-col animate-fade-right delay-1000">
@@ -83,7 +97,7 @@ const TechStack: FC = () => {
           : 'Clique em um ícone da stack para saber mais sobre ele.'}
       </div>
     </div>
-  );
+  )
 }
 
-export default TechStack;
+export default TechStack
