@@ -1,12 +1,12 @@
-import { ModeToggle } from './mode-toggle';
-import { Separator } from './ui/separator';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { ModeToggle } from './mode-toggle'
+import { Separator } from './ui/separator'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 type NavItemProps = {
-  href: string;
-  text: string;
-};
+  href: string
+  text: string
+}
 
 const NavItem = ({ href, text }: NavItemProps) => (
   <>
@@ -23,7 +23,7 @@ const NavItem = ({ href, text }: NavItemProps) => (
       className="h-3 sm:h-4 md:h-6 mx-1 md:mx-2"
     />
   </>
-);
+)
 
 function Navbar() {
   return (
@@ -34,7 +34,7 @@ function Navbar() {
       <NavItem href="/contact" text="Contato" />
       <ModeToggle />
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

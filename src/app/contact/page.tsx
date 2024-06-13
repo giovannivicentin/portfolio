@@ -1,78 +1,77 @@
-'use client';
+'use client'
 
-import { useEffect, useState } from 'react';
-import { Label } from '@/components/ui/label';
-import { Input } from '../../components/ui/input';
+import { useEffect, useState } from 'react'
+import { Label } from '@/components/ui/label'
+import { Input } from '../../components/ui/input'
 import {
   LinkedInLogoIcon,
   GitHubLogoIcon,
   ExclamationTriangleIcon,
-  RocketIcon,
   CheckIcon,
-} from '@radix-ui/react-icons';
-import { RiWhatsappFill } from 'react-icons/ri';
-import { TbMailFilled } from 'react-icons/tb';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
-import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert';
+} from '@radix-ui/react-icons'
+import { RiWhatsappFill } from 'react-icons/ri'
+import { TbMailFilled } from 'react-icons/tb'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Textarea } from '@/components/ui/textarea'
+import { Alert, AlertTitle, AlertDescription } from '@/components/ui/alert'
 
 const ContactPage = () => {
-  const [charCount, setCharCount] = useState(0);
-  const [hasReachedLimit, setHasReachedLimit] = useState(false);
+  const [charCount, setCharCount] = useState(0)
+  const [hasReachedLimit, setHasReachedLimit] = useState(false)
 
   // States for email, subject, and message.
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [showFailureAlert, setShowFailureAlert] = useState(false);
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false)
+  const [showFailureAlert, setShowFailureAlert] = useState(false)
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setEmail(e.target.value);
+    setEmail(e.target.value)
 
   const handleSubjectChange = (e: React.ChangeEvent<HTMLInputElement>) =>
-    setSubject(e.target.value);
+    setSubject(e.target.value)
 
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const inputValue = e.target.value;
-    setMessage(inputValue);
-    setCharCount(inputValue.length);
-    setHasReachedLimit(inputValue.length >= 200);
+    const inputValue = e.target.value
+    setMessage(inputValue)
+    setCharCount(inputValue.length)
+    setHasReachedLimit(inputValue.length >= 200)
     if (inputValue.length > 200) {
-      setMessage(inputValue.slice(0, 200));
+      setMessage(inputValue.slice(0, 200))
     }
-  };
+  }
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
-    event.preventDefault();
+    event.preventDefault()
 
     const response = await fetch('/api/send', {
       method: 'POST',
       body: JSON.stringify({ email, subject, message }),
-    });
-    const data = await response.json();
+    })
+    const data = await response.json()
 
     if (data.success) {
-      setShowSuccessAlert(true);
-      setEmail('');
-      setSubject('');
-      setMessage('');
+      setShowSuccessAlert(true)
+      setEmail('')
+      setSubject('')
+      setMessage('')
     } else {
-      setShowFailureAlert(true);
+      setShowFailureAlert(true)
     }
-  };
+  }
 
   useEffect(() => {
     if (showSuccessAlert || showFailureAlert) {
       const timer = setTimeout(() => {
-        setShowSuccessAlert(false);
-        setShowFailureAlert(false);
-      }, 5000);
+        setShowSuccessAlert(false)
+        setShowFailureAlert(false)
+      }, 5000)
 
-      return () => clearTimeout(timer);
+      return () => clearTimeout(timer)
     }
-  }, [showSuccessAlert, showFailureAlert]);
+  }, [showSuccessAlert, showFailureAlert])
 
   return (
     <div className="flex flex-col items-center p-4 md:px-24">
@@ -161,7 +160,7 @@ const ContactPage = () => {
                 href="https://github.com/giovannivicentin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='animate-fade-up delay-500'
+                className="animate-fade-up delay-500"
               >
                 <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -169,8 +168,7 @@ const ContactPage = () => {
                 href="https://www.linkedin.com/in/giovannivicentin/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='animate-fade-up delay-600'
-
+                className="animate-fade-up delay-600"
               >
                 <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -178,8 +176,7 @@ const ContactPage = () => {
                 href="https://wa.me//5511942010707?text=Olá%20Giovanni"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='animate-fade-up delay-700'
-
+                className="animate-fade-up delay-700"
               >
                 <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -187,7 +184,7 @@ const ContactPage = () => {
                 href="mailto:giovannifvicentin@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className='animate-fade-up delay-800'
+                className="animate-fade-up delay-800"
               >
                 <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
@@ -196,7 +193,7 @@ const ContactPage = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage

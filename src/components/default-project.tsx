@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { RxExternalLink, RxGithubLogo } from 'react-icons/rx';
-import Link from 'next/link';
+import Image from 'next/image'
+import { RxExternalLink, RxGithubLogo } from 'react-icons/rx'
+import Link from 'next/link'
 
 interface Props {
-  photo: string;
-  photoAlt: string;
-  explanation: string;
-  hrefGithub: string;
-  hrefLive: string;
-  reverse?: boolean;
+  photo: string
+  photoAlt: string
+  explanation: string
+  hrefGithub: string
+  hrefLive: string
+  reverse?: boolean
 }
 
 const DefaultProject: React.FC<Props> = ({
@@ -35,9 +35,10 @@ const DefaultProject: React.FC<Props> = ({
             className="border-collapse border-2 rounded-md border-primary/50 hover:dark:border-violet-400 hover:border-violet-700 transition-colors"
             sizes="100vw"
             style={{
-              width: "100%",
-              height: "auto"
-            }} />
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </Link>
       </div>
       <div className="w-full sm:w-1/2 flex flex-col justify-between">
@@ -54,7 +55,7 @@ const DefaultProject: React.FC<Props> = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DefaultProject;
+export default DefaultProject
