@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: 'Giovanni Vicentin - Professional Portfolio',
     images: [
       {
-        url: 'https://avatars.githubusercontent.com/u/78269662?v=4',
+        url: '/portfolio-project.png',
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Giovanni Vicentin - Professional Portfolio',
     description:
       'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
-    images: 'https://avatars.githubusercontent.com/u/78269662?v=4',
+    images: '/portfolio-project.png',
   },
   category: 'Software Development',
   keywords: [
