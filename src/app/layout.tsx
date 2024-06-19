@@ -34,11 +34,7 @@ export const metadata: Metadata = {
     description:
       'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
     siteName: 'Giovanni Vicentin - Professional Portfolio',
-    images: [
-      {
-        url: 'https://github.com/giovannivicentin.png',
-      },
-    ],
+    images: 'https://avatars.githubusercontent.com/u/78269662?v=4',
   },
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1.0',
@@ -46,7 +42,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@gibasvicentin',
     creator: '@gibasvicentin',
-    images: 'https://github.com/giovannivicentin.png',
+    title: 'Giovanni Vicentin - Professional Portfolio',
+    description:
+      'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
+    images: 'https://avatars.githubusercontent.com/u/78269662?v=4',
   },
   category: 'Software Development',
   keywords: [
