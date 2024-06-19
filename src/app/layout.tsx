@@ -34,7 +34,11 @@ export const metadata: Metadata = {
     description:
       'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
     siteName: 'Giovanni Vicentin - Professional Portfolio',
-    images: 'https://avatars.githubusercontent.com/u/78269662?v=4',
+    images: [
+      {
+        url: 'https://avatars.githubusercontent.com/u/78269662?v=4',
+      },
+    ],
   },
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1.0',
