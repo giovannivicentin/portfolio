@@ -20,7 +20,7 @@ const sintony = Sintony({
 })
 
 export const metadata: Metadata = {
-  title: 'Giovanni Vicentin - Professional Portfolio',
+  title: 'Giovanni Vicentin - Desenvolvedor de Software',
   description:
     'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
   authors: { name: 'Giovanni Vicentin', url: 'https://giovannivicentn.com' },
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://www.giovannivicentin.com',
-    title: 'Giovanni Vicentin - Professional Portfolio',
+    title: 'Giovanni Vicentin - Desenvolvedor de Software',
     description:
       'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
-    siteName: 'Giovanni Vicentin - Professional Portfolio',
+    siteName: 'Giovanni Vicentin - Desenvolvedor de Software',
     images: [
       {
         url: '/portfolio-project.png',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@gibasvicentin',
     creator: '@gibasvicentin',
-    title: 'Giovanni Vicentin - Professional Portfolio',
+    title: 'Giovanni Vicentin - Desenvolvedor de Software',
     description:
       'Explore o portfólio profissional de Giovanni Vicentin. Descubra seus projetos, habilitades e trajetória profissional.',
     images: '/portfolio-project.png',
