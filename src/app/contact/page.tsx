@@ -74,7 +74,7 @@ const ContactPage = () => {
   }, [showSuccessAlert, showFailureAlert])
 
   return (
-    <div className="flex flex-col items-center p-4 md:px-24">
+    <div className="flex flex-col items-center p-4 md:px-24 z-20">
       <div className="fixed bottom-1/4 sm:bottom-0 sm:right-0 m-6 space-y-4">
         {showSuccessAlert && (
           <Alert>

@@ -30,7 +30,7 @@ export default function Home() {
               livros.
             </p>
           </div>
-          <div className="mt-4 flex flex-col md:flex-row animate-fade-right delay-400">
+          <div className="mt-4 flex flex-col md:flex-row md:gap-4 animate-fade-right delay-400">
             <Link href="/journey" prefetch>
               <Button className="text-md md:text-lg w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Saiba Mais Sobre Mim
@@ -40,7 +40,7 @@ export default function Home() {
               href="/Giovanni_Vicentin_CV.pdf"
               download="Giovanni_Vicentin_CV.pdf"
             >
-              <Button className="text-md md:text-lg mt-4 md:mt-0 md:ml-4 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
+              <Button className="text-md md:text-lg mt-4 md:mt-0 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download do Currículo
               </Button>
             </a>
@@ -49,7 +49,7 @@ export default function Home() {
           <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-500">
             Me encontre em:
           </p>
-          <div className="flex mt-5 animate-fade-right delay-600">
+          <div className="flex mt-5 animate-fade-right delay-600 gap-4">
             <Link
               href="https://www.linkedin.com/in/giovannivicentin/"
               target="_blank"
@@ -62,7 +62,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubLogoIcon className="w-8 h-8 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+              <GitHubLogoIcon className="w-8 h-8 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
           </div>
           <TechStack />
