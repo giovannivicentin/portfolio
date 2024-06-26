@@ -36,14 +36,11 @@ export default function Home() {
                 Saiba Mais Sobre Mim
               </Button>
             </Link>
-            <a
-              href="/Giovanni_Vicentin_CV.pdf"
-              download="Giovanni_Vicentin_CV.pdf"
-            >
+            <Link href="/Giovanni_Vicentin_CV.pdf">
               <Button className="text-md md:text-lg mt-4 md:mt-0 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download do Currículo
               </Button>
-            </a>
+            </Link>
           </div>
 
           <p className="mt-5 text-muted-foreground text-lg animate-fade-right delay-500">
