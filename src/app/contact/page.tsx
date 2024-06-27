@@ -160,6 +160,7 @@ const ContactPage = () => {
                 href="https://github.com/giovannivicentin"
                 target="_blank"
                 rel="noopener noreferrer"
+                about="Giovanni Vicentin GitHub Profile"
                 className="animate-fade-up delay-500"
               >
                 <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
@@ -168,6 +169,7 @@ const ContactPage = () => {
                 href="https://www.linkedin.com/in/giovannivicentin/"
                 target="_blank"
                 rel="noopener noreferrer"
+                about="Giovanni Vicentin LinkedIn Profile"
                 className="animate-fade-up delay-600"
               >
                 <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
@@ -176,6 +178,7 @@ const ContactPage = () => {
                 href="https://wa.me//5511942010707?text=Olá%20Giovanni"
                 target="_blank"
                 rel="noopener noreferrer"
+                about="Giovanni Vicentin WhatsApp Profile"
                 className="animate-fade-up delay-700"
               >
                 <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
@@ -184,6 +187,7 @@ const ContactPage = () => {
                 href="mailto:giovannifvicentin@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                about="Giovanni Vicentin E-mail"
                 className="animate-fade-up delay-800"
               >
                 <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />

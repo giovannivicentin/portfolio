@@ -31,12 +31,15 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-4 flex flex-col md:flex-row md:gap-4 animate-fade-right delay-400">
-            <Link href="/journey" prefetch>
+            <Link href="/journey" about="Link to /journey page" prefetch>
               <Button className="text-md md:text-lg w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Saiba Mais Sobre Mim
               </Button>
             </Link>
-            <Link href="/Giovanni_Vicentin_CV.pdf">
+            <Link
+              href="/Giovanni_Vicentin_CV.pdf"
+              about="Link to download Resume PDF file"
+            >
               <Button className="text-md md:text-lg mt-4 md:mt-0 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
                 Download do Currículo
               </Button>
@@ -51,6 +54,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/giovannivicentin/"
               target="_blank"
               rel="noopener noreferrer"
+              about="Giovanni Vicentin LinkedIn Profile"
             >
               <LinkedInLogoIcon className="w-8 h-8 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>
@@ -58,6 +62,7 @@ export default function Home() {
               href="https://github.com/giovannivicentin"
               target="_blank"
               rel="noopener noreferrer"
+              about="Giovanni Vicentin GitHub Profile"
             >
               <GitHubLogoIcon className="w-8 h-8 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
             </Link>

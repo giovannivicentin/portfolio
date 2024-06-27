@@ -26,7 +26,12 @@ const DefaultProject: React.FC<Props> = ({
       }`}
     >
       <div className="w-full sm:w-1/2">
-        <Link href={hrefLive} target="_blank" rel="noopener noreferrer">
+        <Link
+          href={hrefLive}
+          target="_blank"
+          rel="noopener noreferrer"
+          about="Link to the project"
+        >
           <Image
             src={photo}
             alt={photoAlt}
@@ -46,10 +51,20 @@ const DefaultProject: React.FC<Props> = ({
           {explanation}
         </p>
         <div className="flex mt-4 justify-center sm:pb-0">
-          <Link href={hrefGithub} target="_blank" rel="noopener noreferrer">
+          <Link
+            href={hrefGithub}
+            target="_blank"
+            rel="noopener noreferrer"
+            about="Link to GitHub of project"
+          >
             <RxGithubLogo className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
-          <Link href={hrefLive} target="_blank" rel="noopener noreferrer">
+          <Link
+            href={hrefLive}
+            target="_blank"
+            rel="noopener noreferrer"
+            about="Production link of project"
+          >
             <RxExternalLink className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
         </div>

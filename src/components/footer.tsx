@@ -13,6 +13,7 @@ function Footer() {
             href="https://www.linkedin.com/in/giovannivicentin/"
             target="_blank"
             rel="noopener noreferrer"
+            about="Giovanni Vicentin LinkedIn Profile"
           >
             LinkedIn
           </Link>
@@ -21,6 +22,7 @@ function Footer() {
             href="https://github.com/giovannivicentin"
             target="_blank"
             rel="noopener noreferrer"
+            about="Giovanni Vicentin GitHub Profile"
           >
             GitHub
           </Link>
@@ -29,6 +31,7 @@ function Footer() {
             href="mailto:giovannifvicentin@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            about="Giovanni Vicentin E-mail"
           >
             E-mail
           </Link>

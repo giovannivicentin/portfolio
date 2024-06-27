@@ -10,7 +10,7 @@ type NavItemProps = {
 
 const NavItem = ({ href, text }: NavItemProps) => (
   <>
-    <Link href={href}>
+    <Link href={href} about={'Link to the page ' + href}>
       <Button
         variant="ghost"
         className="px-3 md:px-4 lg:px-6 text-xs sm:text-lg xl:text-xl w-18 sm:w-20 lg:w-32 hover:dark:text-violet-400 hover:text-violet-700 hover:bg-transparent"
