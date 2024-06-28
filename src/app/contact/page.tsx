@@ -155,42 +155,42 @@ const ContactPage = () => {
                 Enviar
               </Button>
             </div>
-            <div className="flex pt-8 gap-2">
+            <div className="flex pt-8 gap-6">
               <Link
                 href="https://github.com/giovannivicentin"
                 target="_blank"
                 rel="noopener noreferrer"
-                about="Giovanni Vicentin GitHub Profile"
+                aria-label="GitHub Profile of Giovanni Vicentin"
                 className="animate-fade-up delay-500"
               >
-                <GitHubLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+                <GitHubLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/giovannivicentin/"
                 target="_blank"
                 rel="noopener noreferrer"
-                about="Giovanni Vicentin LinkedIn Profile"
+                aria-label="LinkedIn Profile of Giovanni Vicentin"
                 className="animate-fade-up delay-600"
               >
-                <LinkedInLogoIcon className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+                <LinkedInLogoIcon className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
               <Link
                 href="https://wa.me//5511942010707?text=Olá%20Giovanni"
                 target="_blank"
                 rel="noopener noreferrer"
-                about="Giovanni Vicentin WhatsApp Profile"
+                aria-label="WhatsApp of Giovanni Vicentin"
                 className="animate-fade-up delay-700"
               >
-                <RiWhatsappFill className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+                <RiWhatsappFill className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
               <Link
                 href="mailto:giovannifvicentin@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                about="Giovanni Vicentin E-mail"
+                aria-label="E-mail of Giovanni Vicentin"
                 className="animate-fade-up delay-800"
               >
-                <TbMailFilled className="w-7 h-7 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
+                <TbMailFilled className="w-7 h-7 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700" />
               </Link>
             </div>
           </div>
