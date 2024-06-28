@@ -50,22 +50,22 @@ const DefaultProject: React.FC<Props> = ({
         <p className="text-muted-foreground pt-3 sm:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
           {explanation}
         </p>
-        <div className="flex mt-4 justify-center sm:pb-0">
+        <div className="flex mt-4 justify-center gap-4 sm:pb-0">
           <Link
             href={hrefGithub}
             target="_blank"
             rel="noopener noreferrer"
-            about="Link to GitHub of project"
+            aria-label="Link to GitHub of project"
           >
-            <RxGithubLogo className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
+            <RxGithubLogo className="w-6 h-6 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
           <Link
             href={hrefLive}
             target="_blank"
             rel="noopener noreferrer"
-            about="Production link of project"
+            aria-label="Production link of project"
           >
-            <RxExternalLink className="w-6 h-6 ml-4 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
+            <RxExternalLink className="w-6 h-6 transition-transform transform hover:scale-110 hover:dark:text-violet-400 hover:text-violet-700 text-muted-foreground" />
           </Link>
         </div>
       </div>
