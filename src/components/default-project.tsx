@@ -21,11 +21,11 @@ const DefaultProject: React.FC<Props> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col sm:flex-row gap-x-6 xl:gap-x-12 items-center sm:items-stretch ${
-        reverse ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row'
+      className={`flex flex-col md:flex-row gap-x-6 xl:gap-x-12 items-center md:items-stretch ${
+        reverse ? 'flex-col md:flex-row-reverse' : 'flex-col md:flex-row'
       }`}
     >
-      <div className="w-full sm:w-1/2">
+      <div className="w-full md:w-1/2">
         <Link
           href={hrefLive}
           target="_blank"
@@ -35,8 +35,8 @@ const DefaultProject: React.FC<Props> = ({
           <Image
             src={photo}
             alt={photoAlt}
-            width={500}
-            height={500}
+            width={1920}
+            height={1080}
             className="border-collapse border-2 rounded-md border-primary/50 hover:dark:border-violet-400 hover:border-violet-700 transition-colors"
             sizes="100vw"
             style={{
@@ -46,11 +46,11 @@ const DefaultProject: React.FC<Props> = ({
           />
         </Link>
       </div>
-      <div className="w-full sm:w-1/2 flex flex-col justify-between">
-        <p className="text-muted-foreground pt-3 sm:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
+      <div className="w-full md:w-1/2 flex flex-col justify-between">
+        <p className="text-muted-foreground pt-3 md:pt-0 overflow-auto break-words text-sm text-justify leading-relaxed">
           {explanation}
         </p>
-        <div className="flex mt-4 justify-center gap-4 sm:pb-0">
+        <div className="flex mt-4 justify-center gap-4 md:pb-0">
           <Link
             href={hrefGithub}
             target="_blank"
