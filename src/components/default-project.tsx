@@ -39,10 +39,10 @@ const DefaultProject: React.FC<Props> = ({
             height={1080}
             priority
             className="border-collapse border-2 rounded-md border-primary/50 hover:dark:border-violet-400 hover:border-violet-700 transition-colors"
-            sizes="100vw"
             style={{
               width: '100%',
-              height: 'auto',
+              height: '100%',
+              objectFit: 'cover',
             }}
           />
         </Link>

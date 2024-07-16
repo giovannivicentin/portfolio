@@ -18,12 +18,21 @@ const ProjectsPage = () => {
           </div>
           <div className="animate-fade-left delay-200">
             <DefaultProject
+              photo="/projects/tecnojund.png"
+              photoAlt="Tecnojund Website project"
+              explanation="Refiz o site da Tecnojund do zero com o objetivo de modernizar a marca, melhorar a experiência do usuário e aumentar a conversão de leads. A principal dificuldade era a ausência de um formulário eficiente para abertura de chamados com envio de e-mail. Agora, o site possui a página /chamados que atende a essa necessidade. Como resultado, houve um aumento significativo no tráfego orgânico, na geração de leads e no fechamento de novos contratos."
+              hrefGithub="https://github.com/giovannivicentin/tecnojund"
+              hrefLive="https://www.tecnojund.com.br"
+              reverse
+            />
+          </div>
+          <div className="animate-fade-right delay-300">
+            <DefaultProject
               photo="/projects/portfolio.png"
               photoAlt="portfolio project"
-              explanation="Desenvolvi meu portfólio pessoal com o objetivo de construir uma marca pessoal, facilitar o networking e comprovar minha experiência como desenvolvedor de software. Utilizando tecnologias como Next.js, React, Tailwind CSS, Resend API e Node.js, criei um site simples e acessível, focado em adicionar e apresentar meus projetos de forma organizada. Através dele, espero que as pessoas possam me conhecer melhor profissionalmente, compreender minha trajetória e habilidades, e encontrar uma forma fácil de entrar em contato comigo para futuras oportunidades e colaborações."
+              explanation="Criei meu portfólio pessoal com o objetivo de construir uma marca pessoal, facilitar o networking e comprovar minha experiência como desenvolvedor de software. Criei um site simples e acessível, focado em adicionar e apresentar meus projetos de forma organizada. Através dele, espero que as pessoas possam me conhecer melhor profissionalmente e encontrar uma forma fácil de entrar em contato comigo para futuras oportunidades e colaborações."
               hrefGithub="https://github.com/giovannivicentin/portfolio"
               hrefLive="https://www.giovannivicentin.com/"
-              reverse
             />
           </div>
         </div>
