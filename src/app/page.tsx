@@ -17,7 +17,7 @@ export default function Home() {
               </span>
             </h1>
             <div>
-              <h2 className="text-lg mt-4 max-w-xl text-start  leading-relaxed animate-fade-right delay-100 md:w-[30rem]">
+              <h2 className="text-lg mt-4 max-w-xl text-center sm:text-start leading-relaxed animate-fade-right delay-100 md:w-[30rem]">
                 Criando código para capacitar a inovação digital nas empresas,
                 garantindo experiências de usuário de alta qualidade no{' '}
                 <Link
@@ -28,7 +28,7 @@ export default function Home() {
                 </Link>
               </h2>
             </div>
-            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-start leading-relaxed animate-fade-right delay-300">
+            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-center sm:text-start leading-relaxed animate-fade-right delay-300">
               Quando não estou codificando ou desenvolvendo um projeto pessoal,
               provavelmente estou indo a eventos, fazendo um café de qualidade e
               tentando me manter em forma para viver um pouco mais.
