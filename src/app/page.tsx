@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { LinkedInLogoIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import TechStack from '@/components/tech-stack'
+import { Button } from '@/components/ui/button'
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,24 +10,28 @@ export default function Home() {
       <div className="flex flex-col-reverse sm:flex-row items-start">
         <div className="flex flex-col mr-2">
           <div className="sm:items-center text-center max-w-4xl w-full">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl max-w-xl sm:text-justify leading-relaxed animate-fade-right">
-              Bem-vindo ao meu portfólio!
+            <h1 className="text-xl sm:text-2xl md:text-4xl max-w-xl sm:text-justify leading-relaxed animate-fade-right">
+              Olá, eu sou
+              <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-200">
+                {` Giovanni Vicentin`}
+              </span>
             </h1>
             <div>
-              <h2 className="text-xl sm:text-2xl mt-4 max-w-xl sm:text-justify leading-relaxed animate-fade-right delay-100 md:w-[30rem]">
-                Fico feliz com a sua visita. Meu nome é
-                <span className="dark:text-violet-400 text-violet-700 animate-fade-right delay-200">
-                  {` Giovanni Vicentin`}
-                </span>
-                .
+              <h2 className="text-lg mt-4 max-w-xl text-start  leading-relaxed animate-fade-right delay-100 md:w-[30rem]">
+                Criando código para capacitar a inovação digital nas empresas,
+                garantindo experiências de usuário de alta qualidade no{' '}
+                <Link
+                  href="https://g.co/kgs/tNyh6S5"
+                  className="hover:underline hover:dark:text-violet-400 hover:text-violet-700"
+                >
+                  Sam&rsquo;s Club
+                </Link>
               </h2>
             </div>
-            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-justify leading-relaxed animate-fade-right delay-300">
-              Além da programação, dedico-me ao karatê shotokan, que equilibra
-              mente e corpo. A música, especialmente o rap brasileiro, energiza
-              e inspira meu dia a dia. Sou também apaixonado por leitura, sempre
-              em busca de novos conhecimentos e visões de mundo através dos
-              livros.
+            <p className="text-lg text-muted-foreground mt-4 max-w-xl text-start leading-relaxed animate-fade-right delay-300">
+              Quando não estou codificando ou desenvolvendo um projeto pessoal,
+              provavelmente estou indo a eventos, fazendo um café de qualidade e
+              tentando me manter em forma para viver um pouco mais.
             </p>
           </div>
           <div className="mt-4 flex flex-col md:flex-row gap-4 animate-fade-right delay-400">
@@ -37,7 +41,7 @@ export default function Home() {
               </Button>
             </Link>
             <a
-              href="/Giovanni_Vicentin_CV.pdf"
+              href="/giovanni-vicentin-resume.pdf"
               aria-label="Download do Currículo"
             >
               <Button className="text-md md:text-lg md:mt-0 w-full md:w-auto transition-transform transform hover:scale-105 hover:dark:bg-violet-400 hover:bg-violet-700">
